@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" >
+		<title>云客赞v3.4.0-员工查询</title>
+		<link rel="stylesheet" href="./styles/css.css">
+		<script type="text/javascript" src="./js/index.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<form action="">
+				<div id="hotel">
+					<span class="hotel_icon"></span>
+					<p>请选择酒店</p>
+					<span class="reback"></span>
+					<span class="line1"></span>
+				</div>
+				<div class="name">
+					<span class="user_icon"></span>
+					<input type="text" name="name" placeholder="请输入您想评价的员工姓名">
+					<span class="line1"></span>
+				</div>
+				
+				<div class="btn">
+					<input type="reset" value="重置" class="reset">
+					<input type="submit" value="查询" class="submit">
+				</div>
+			</form>
+
+			<!-- 暗层 -->
+			<div id="light" class="white_content"></div> 
+			
+			<!-- 弹窗 -->
+			<div id="main" class="popup">
+				<ul>
+					<li class="hotel_title">请选择酒店
+						<span id="close"></span>
+					</li>
+					<li>数码港大酒店
+						<span class="selected"></span>
+					</li>
+					<li>长隆酒店
+						<span class="selected"></span>
+					</li>
+					<li>要出发度假村
+						<span class="selected"></span>
+					</li>
+					<li>云客精品客栈
+						<span class="selected"></span>
+					</li>
+					<li>科韵路国际连锁酒店
+						<span class="selected"></span>
+					</li>
+				</ul>
+			</div>
+
+		<!-- 搜索内容 -->
+		<div id="error">
+			<img src="./images/default_Advance card_icon@2x.png" >
+			<p>抱歉，查找不到该员工，请检查后重新查询</p>
+		</div>
+			
+		</div>
+
+				
+	</body>
+	
+</html>

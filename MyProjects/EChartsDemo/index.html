@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>图表demo</title>
+	<script src="echarts.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	
+</head>
+<body>
+	 <div id="main" style="width: 600px;height:400px;"></div>
+</body>
+<script type="text/javascript">
+	var myChart = echarts.init($('#main')[0], 'dark');
+// 	myChart.setOption({
+//     title: {
+//         text: 'ECharts 入门示例'
+//     },
+//     tooltip: {},
+//     xAxis: {
+//         data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+//     },
+//     yAxis: {},
+//     series: [{
+//         name: '销量',
+//         type: 'bar',
+//         data: [5, 20, 36, 10, 10, 20]
+//     }]
+// });
+	// myChart.setOption({
+	// 	color: ['#c23531','#2f4554', '#61a0a8', '#d48265', '#91c7ae','#749f83',  '#ca8622', '#bda29a','#6e7074', '#546570', '#c4ccd3'],
+	// 	backgroundColor: '#2c343c',
+	//     series : [
+	//         {
+	//             name: '访问来源',
+	//             type: 'pie',
+	//             // roseType: true,
+	//             radius: '55%',
+	//             data:[
+	//                 {value:235, name:'视频广告'},
+	//                 {value:274, name:'联盟广告'},
+	//                 {value:310, name:'邮件营销'},
+	//                 {value:335, name:'直接访问'},
+	//                 {value:400, name:'搜索引擎'}
+	//             ],
+	//             emphasis: {
+	// 	            itemStyle: {
+	// 	                // 高亮时点的颜色。
+	// 	                color: 'blue'
+	// 	            },
+	// 	            label: {
+	// 	                show: true,
+	// 	                // 高亮时标签的文字。
+	// 	                formatter: 'This is a emphasis label.'
+	// 	            }
+	// 	        }
+	//         }
+
+	        
+	//     ]
+	// });
+	// 
+	// 
+	myChart.setOption({
+	    title: {
+	        text: '异步数据加载示例'
+	    },
+	    tooltip: {},
+	    legend: {
+	        data:['销量']
+	    },
+	    xAxis: {
+	        data: []
+	    },
+	    yAxis: {},
+	    series: [{
+	        name: '销量',
+	        type: 'bar',
+	        data: []
+	    }]
+	});
+
+	// 异步加载数据
+	$.get('data.json',function(data){
+		myChart.hideLoading();
+		myChart.setOption({
+	        xAxis: {
+	            data: data.categories
+	        },
+	        series: [{
+	            // 根据名字对应到相应的系列
+	            name: '销量',
+	            data: data.data
+	        }]
+	    });
+	},'json');
+	
+</script>
+</html>

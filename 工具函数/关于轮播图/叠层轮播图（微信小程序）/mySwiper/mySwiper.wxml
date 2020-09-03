@@ -1,0 +1,12 @@
+<view class="swiper-page" bindtouchmove="touchmove" bindtouchstart="touchstart" bindtouchend="touchend">
+  <view wx:for="{{7}}" wx:key="index" class="swiper-container">
+    <view class="item-container" style="z-index:{{indexArray[index]}}">
+      <view class="item{{index}} item-common" animation="{{animation[index]}}" bindtap="tapItemFn" data-idx="{{index}}" data-text="{{textArray[index]}}">
+        <image class="background" src="{{imgArray[index]}}" mode='aspectFit'></image>
+        <text class="item-text">{{textArray[index]}}</text>
+      </view>
+    </view>
+  </view>
+  <button bindtap="tapLeft" data-num="1" style="position:absolute;top:0;left:20rpx">往左滑</button>
+  <button bindtap="tapRight" data-num="1" style="position:absolute;top:0;right:20rpx">往右滑</button>
+</view>

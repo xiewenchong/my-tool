@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>商品详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="container">
+				<div class="detail">
+					<header class="header">
+						<div class="header_inner flexWrap">
+							<div id="header_btn_nav" class="header_btn header_btn_back"><a href="javascript:history.go(-1);">返回</a></div>
+							<div class="header_cont flex">详情</div>
+							<div class="header_btn header_btn_cart"></div>
+						</div>
+					</header>
+					<div class="booksDeatail">
+<!--						<img alt="" src="images/ly.jpg">
+						<p>出版编号：1</p>
+						<p>出版社：人民文学出版社</p>
+						<p>页数：303</p>
+						<p>简介：崇贤馆始置唐代太宗朝。1999年，李克先生及志同道合者复兴其宗旨。以积累、传播中华优秀传统文化，提供全新国学体验馆为宏愿。</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+		        //获取url中的参数
+		        function getUrlParam(name) {
+		            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+		            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+		            if (r != null) return unescape(r[2]); return null; //返回参数值
+		        }
+		        
+		        //接收URL中的参数booksId
+		        var id = getUrlParam('booksId');
+		        console.log('id:'+id);
+		        
+		        $.ajax({
+		        	type:'get',
+		        	url:'js/data.json',
+		        	dataType:'json',
+		        	success:function(res,status){
+		        		console.log(status)
+		        		$.each(res.books, function(idx,val) {
+		        			//根据id获取详情数据
+		        			if(id == val.id){
+		        				var str = "<img src='"+val.imgUrl+"'/><p>出版编号："+val.id+"</p><p>出版社："+val.publish+"</p><p>页数："+val.num+"</p><p>简介："+val.desc+"</p>";
+		        				console.log('index:'+idx);
+		        			}
+		        			$('.booksDeatail').append(str);
+		        		});
+		        	}
+		        })
+			})
+		</script>
+	</body>
+</html>

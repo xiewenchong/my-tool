@@ -1,0 +1,9 @@
+ //比较两个日期相差天数
+	    compareDate(date1, date2) {
+	    	let checkDate = (date) => {
+		        return date.toString().length !== 13 ? Number(date + '000') : Number(date);
+	    	};
+
+	        return (new Date(checkDate(date1)) - new Date(checkDate(date2))) / (24 * 3600 * 1000);
+	    },
+

@@ -1,0 +1,120 @@
+@mixin displayflex {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+}
+
+@mixin flex($t: 1) {
+    flex: $t;
+    -webkit-box-flex: $t;
+    -webkit-flex: $t;
+}
+
+
+@mixin transform($t) {
+    transform: $t;
+    -webkit-transform: $t;
+}
+//@include transform(translate3d(-50%,-50%,0)  scale(1.185));
+
+
+@mixin transition($t) {
+    transition: $t;
+    -webkit-transition: $t;
+}
+//@include transition(all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55));
+
+//渐变
+@mixin linear-gradient($t, $c1, $c2) {
+    background: linear-gradient($t, $c1, $c2);
+    background: -webkit-linear-gradient($t, $c1, $c2); 
+}
+
+//超出一行显示省略号
+@mixin oneline {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//超出n行显示省略号
+@mixin moreline($t: 2) {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $t;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+//0.5px线
+@mixin halfline($a: bottom, $c: #e9e9e9, $p: relative) {
+    position: $p;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: $c;
+
+        @if(top == $a) {
+            width: 100%;
+            height: 1px;
+            top: 0;
+            left: 0;
+            @include transform(scaleY(0.5));
+        }
+
+        @else if(right == $a) {
+            width: 1px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            @include transform(scaleX(0.5));
+        }
+
+        @else if(bottom == $a) {
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            @include transform(scaleY(0.5));
+        }
+
+        @else if(left == $a) {
+            width: 1px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            @include transform(scaleX(0.5));
+        }
+        
+    }
+}
+//@include halfline(bottom, #e9e9e9);
+
+
+/**
+ * 1px线
+ * 使用：@include border1px(颜色[, top|bottom|left|right])
+ */
+ @mixin border1px($color, $station: null) {
+    border: 0;
+    @if $station != null {
+        border-#{$station}: 1px solid;
+    }
+    @else {
+        border: 1px solid;
+    }
+    border-image: svg(1px-border param(--color #{$color})) 1 stretch;
+}
+
+
+
+//按钮点击active效果
+@mixin btn-active($c, $r: 10%) {
+    background-color: $c;
+
+    &:active {
+        background-color: darken($c, $r);
+    }
+}

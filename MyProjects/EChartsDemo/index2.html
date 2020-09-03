@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>图表demo</title>
+	<script src="echarts.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<style>
+		div{
+			margin-bottom: 25px;
+		}
+	</style>
+</head>
+<body>
+	 <div id="main" style="width: 600px;height:400px;"></div>
+	 <div id="main2" style="width: 600px;height:400px;"></div>
+	 <div id="main3" style="width: 600px;height:400px;"></div>
+	 <div id="main4" style="width: 600px;height:400px;"></div>
+	 <div id="main5" style="width: 600px;height:400px;"></div>
+	 <div id="main6" style="width: 600px;height:400px;"></div>
+     <div id="main7" style="width: 600px;height:400px;"></div>
+     <div id="main8" style="width: 1000px;height:800px;"></div>
+</body>
+<script type="text/javascript">
+    function randomData() {  
+     return Math.round(Math.random()*500);  
+    } 
+
+	var myChart = echarts.init($('#main')[0], 'dark');
+	myChart.setOption({
+
+    title: {
+        text: 'ECharts 入门示例',
+        left: '500'
+    },
+    tooltip: {},
+    xAxis: {
+        data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+    },
+    yAxis: {},
+    dataZoom: [
+        {   // 这个dataZoom组件，默认控制x轴。
+            type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+            start: 10,      // 左边在 10% 的位置。
+            end: 60         // 右边在 60% 的位置。
+        },
+        {   // 这个dataZoom组件，也控制x轴。
+            type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+            start: 10,      // 左边在 10% 的位置。
+            end: 60         // 右边在 60% 的位置。
+        },
+        {
+            type: 'slider',
+            yAxisIndex: 0,
+            start: 30,
+            end: 80
+        },
+        {
+            type: 'inside',
+            yAxisIndex: 0,
+            start: 30,
+            end: 80
+        }
+    ],
+    series: [{
+        name: '销量',
+        type: 'bar',
+        data: [5, 20, 36, 10, 10, 20]
+    }]	   
+});
+
+	var myChart2 = echarts.init($('#main2')[0], 'dark');
+	myChart2.setOption({
+		legend: {},
+	    tooltip: {},
+	    dataset: {
+	        // 提供一份数据。
+	        source: [
+	            ['product', '2015', '2016', '2017'],
+	            ['Matcha Latte', 43.3, 85.8, 93.7],
+	            ['Milk Tea', 83.1, 73.4, 55.1],
+	            ['Cheese Cocoa', 86.4, 65.2, 82.5],
+	            ['Walnut Brownie', 72.4, 53.9, 39.1]
+	        ]
+	    },
+	    // 声明一个 X 轴，类目轴（category）。默认情况下，类目轴对应到 dataset 第一列。
+	    xAxis: {type: 'category'},
+	    // 声明一个 Y 轴，数值轴。
+	    yAxis: {},
+	    dataZoom: [
+	        {   // 这个dataZoom组件，默认控制x轴。
+	            type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+	            start: 10,      // 左边在 10% 的位置。
+	            end: 60         // 右边在 60% 的位置。
+	        },
+	        {   // 这个dataZoom组件，也控制x轴。
+	            type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+	            start: 10,      // 左边在 10% 的位置。
+	            end: 60         // 右边在 60% 的位置。
+	        },
+	        {
+            type: 'slider',
+            yAxisIndex: 0,
+            start: 30,
+            end: 80
+        },
+        {
+            type: 'inside',
+            yAxisIndex: 0,
+            start: 30,
+            end: 80
+        }
+   		 ],
+	    // 声明多个 bar 系列，默认情况下，每个系列会自动对应到 dataset 的每一列。
+	    series: [
+	        {type: 'bar'},
+	        {type: 'bar'},
+	        {type: 'bar'}
+	    ]
+	});
+
+	var myChart3 = echarts.init($('#main3')[0], 'dark');
+	myChart3.setOption({
+	
+    title : {
+        text: '未来一周气温变化',
+        subtext: '纯属虚构'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['最高气温','最低气温']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLabel : {
+                formatter: '{value} °C'
+            }
+        }
+    ],
+    series : [
+        {
+            name:'最高气温',
+            type:'line',
+            smooth: true,
+            data:[11, 11, 15, 13, 12, 13, 10],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'最低气温',
+            type:'line',
+            data:[1, -2, 2, 5, 3, 2, 0],
+            markPoint : {
+                data : [
+                    {name : '周最低', value : -2, xAxis: 1, yAxis: -1.5}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : '平均值'}
+                ]
+            }
+        }
+    ]
+});
+
+	var myChart4 = echarts.init($('#main4')[0], 'dark');
+	myChart4.setOption({
+			title : {
+	        text: '某地区蒸发量和降水量',
+	        subtext: '纯属虚构'
+	    },
+	    tooltip : {
+	        trigger: 'axis'
+	    },
+	    legend: {
+	        data:['蒸发量','降水量']
+	    },
+	    toolbox: {
+	        show : true,
+	        feature : {
+	            mark : {show: true},
+	            dataView : {show: true, readOnly: false},
+	            magicType : {show: true, type: ['line', 'bar']},
+	            restore : {show: true},
+	            saveAsImage : {show: true}
+	        }
+	    },
+	    calculable : true,
+	    xAxis : [
+	        {
+	            type : 'category',
+	            data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value'
+	        }
+	    ],
+	   //  dataZoom: [
+    //     {   // 这个dataZoom组件，默认控制x轴。
+    //         type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+    //         start: 10,      // 左边在 10% 的位置。
+    //         end: 60         // 右边在 60% 的位置。
+    //     },
+    //     {   // 这个dataZoom组件，也控制x轴。
+    //         type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+    //         start: 10,      // 左边在 10% 的位置。
+    //         end: 60         // 右边在 60% 的位置。
+    //     },
+    //     {
+    //         type: 'slider',
+    //         yAxisIndex: 0,
+    //         start: 30,
+    //         end: 80
+    //     },
+    //     {
+    //         type: 'inside',
+    //         yAxisIndex: 0,
+    //         start: 30,
+    //         end: 80
+    //     }
+    // ],
+	    series : [
+	        {
+	            name:'蒸发量',
+	            type:'bar',
+	            data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+	            markPoint : {
+	                data : [
+	                    {type : 'max', name: '最大值'},
+	                    {type : 'min', name: '最小值'}
+	                ]
+	            },
+	            markLine : {
+	                data : [
+	                    {type : 'average', name: '平均值'}
+	                ]
+	            }
+	        },
+	        {
+	            name:'降水量',
+	            type:'bar',
+	            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+	            markPoint : {
+	                data : [
+	                    {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+	                    {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+	                ]
+	            },
+	            markLine : {
+	                data : [
+	                    {type : 'average', name : '平均值'}
+	                ]
+	            }
+	        }
+	    ]
+	});
+
+
+
+	var myChart5 = echarts.init($('#main5')[0], 'dark');
+
+	myChart5.setOption({
+        backgroundColor:'#fff',
+	    tooltip:{
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        toolbox: {
+            right:30,
+            top:10,
+            feature: {
+                dataView: {show: true, readOnly: true},
+                magicType: {show: true, type: ['line', 'bar']},
+                restore: {show: true},
+                saveAsImage: {show: true}
+            },
+            iconStyle:{
+               borderColor:'#ccc'
+            }
+        },
+        legend: {
+            type:'scroll',
+            data: ['交易额','毛利','毛利率'],
+            bottom:0,
+            textStyle:{
+                color:'#000'
+            }
+        },
+        xAxis: [{
+            type:'category',
+            data: ['1旅行社','2旅行社','3旅行社','4旅行社','5旅行社','6旅行社','7旅行社','8旅行社','9旅行社','10旅行社','11旅行社','12旅行社'],
+            axisPointer:{
+                type:'shadow'
+            },
+            axisLabel: {
+                            show: true,
+                            textStyle: {
+                                color: '#000'
+                            }
+            },
+            axisLine:{
+                            lineStyle:{
+                                color:'#000',
+                                 width:1,//这里是为了突出显示加上的
+                            }
+            }
+        }],
+        yAxis: [{
+            type:'value',
+            // name:'水量',
+            // min: 0,
+            // max: 250,
+            // interval: 50,
+            axisLabel : {
+                            show: true,
+                            // formatter: '{value} ml',
+                            textStyle: {
+                                color: '#000'
+                            }
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#000',
+                     width:1,//这里是为了突出显示加上的
+                }
+            }
+        },{
+            type:'value',
+            // name:'温度',
+            // min: 0,
+            // max: 25,
+            // interval: 5,
+            axisLabel : {
+                            formatter: '{value} %',
+                            show: true,
+                            textStyle: {
+                                color: '#000'
+                            }
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#000',
+                     width:1,//这里是为了突出显示加上的
+                }
+            }
+        }],
+        series: [{
+            name:'交易额',
+            type:'bar',
+            data:[140000,140000, 140000, 140000, 140000, 140000, 140000, 140000, 140000, 140000, 140000, 140000, ],
+            itemStyle:{
+                        normal:{
+                            color:'#5B9BD5'
+                        }
+            },
+        },{
+            name:'毛利',
+            type:'bar',
+            data:[80000,80000,80000,80000,80000,80000,80000,80000,80000,80000,80000,80000,],
+            itemStyle:{
+                        normal:{
+                            color:'#ED7D31'
+                        }
+            },
+        },{
+            name:'毛利率',
+            type:'line',
+            yAxisIndex: 1,
+            data:[randomData(),randomData(),randomData(),randomData(),randomData(),randomData(),randomData(),randomData(),randomData(),randomData(),randomData(),randomData()],
+            itemStyle:{
+                        normal:{
+                            color:'#A5A5A5'
+                        }
+            },
+        }]
+});
+    
+
+
+
+    var myChart6 = echarts.init($('#main6')[0], 'dark');
+        myChart6.setOption({
+        backgroundColor:'#fff',
+        //图例设置，包括位置，折叠方式等，需与下面series的name对应
+        legend: {
+            type:'scroll',
+            data:['今天','昨天','上周同期','上月同期'],
+            bottom:0,
+            textStyle:{
+                color:'#000'
+            }
+        },
+        //工具栏
+        toolbox: {
+            right:30,
+            top:10,
+            show : true,
+            feature : {
+                dataView : {show: true, readOnly: true},
+                magicType : {show: true, type: ['line', 'bar']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            },
+            iconStyle:{
+               borderColor:'#ccc'
+            }
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        xAxis: {
+            //坐标轴文本颜色
+            axisLabel: {
+                            show: true,
+                            textStyle: {
+                                color: '#000'
+                            }
+            },
+            type: 'category',
+            boundaryGap : false,//x轴的值对齐
+            data: ['0.00', '2.00', '4.00', '6.00', '8.00', '10.00', '12.00', '14.00', '16.00', '18.00', '20.00', '22.00'],
+            axisLine:{
+                lineStyle:{
+                    color:'#000',
+                     width:1,//这里是为了突出显示加上的
+                }
+            }
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel : {
+                            show: true,
+                            textStyle: {
+                                color: '#000'
+                            }
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#000',
+                     width:1,//这里是为了突出显示加上的
+                }
+            }
+        },
+        series: [{
+
+            name:'今天',
+            data: [500, 932, 901, 934, 1290, 1330, 2600],
+            type: 'line',
+            smooth: true,
+            markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+            },
+            //平均值的线
+            // markLine : {
+            //         data : [
+            //             {type : 'average', name : '平均值'}
+            //         ],
+            //         lineStyle:{
+            //             color:'#000'
+            //     }       
+            // }
+        }, 
+        {
+            name:'昨天',
+            data: [500, 453, 777, 222, 233, 666, 2444,1523,3211,2232,2212,1211],
+            type: 'line',
+            itemStyle:{
+                        normal:{
+                            color:'#000'
+                        }
+            },
+        },
+        {
+            name:'上周同期',
+            data: [500, 2222, 1901, 1212, 1233, 1730, 1452,1232,2222,1111,1222],
+            type: 'line'
+        },
+        {
+            name:'上月同期',
+            data: [500, 1932, 1901, 1934, 1290, 1330, 2600,2222,1112,1132,2812],
+            type: 'line'
+        }]
+    });
+
+        myChart6.on('click', function (params) {
+            // if(params.value){
+            //     alert("单击了"+params.name+"柱状图");
+            // }else{
+            //     alert("单击了"+params.name+"x轴标签");
+            // }
+            alert(params.name);
+        });  
+
+
+
+
+
+        var myChart7 = echarts.init($('#main7')[0], 'dark');
+        myChart7.setOption({
+            backgroundColor:'#fff',
+            textStyle:{
+                color:'#000',
+                fontWeight:'bold'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            xAxis: [{
+                show: false,
+                type: 'value',
+                splitLine: {
+                    show: false
+                },
+                 axisLabel: {
+                    show: true,
+                    formatter:'{value}%',
+                            textStyle: {
+                                color: '#000'
+                            }
+                }
+                
+            }],
+            yAxis: [{
+                name:'详细数据',
+                type: 'category',
+                data:['广东','广西','湖南','湖北','河南','北京','上海','海南','河北','四川','其他'],
+                axisLabel: {
+                    show: true,
+                            textStyle: {
+                                color: '#000'
+                            }
+                },
+                splitLine: {
+                    show: false
+                }
+            },],
+            series: [{
+                type: 'bar',
+                label: {
+                    //将数据显示在柱状条旁边
+                    normal: {
+                        position: 'right',
+                        show: true
+                    }
+                },
+                itemStyle:{
+                    color:'#fff',
+                    borderColor:'#000'
+                },
+                data: [15,14,13,12,11,10,9,8,7,6,5]
+            }, ]
+        });
+</script>
+</html>

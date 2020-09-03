@@ -1,0 +1,16 @@
+{
+  "name": "demos",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-compose": "^4.0.0",
+    "koa-route": "^3.2.0",
+    "koa-static": "^4.0.1",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.17"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "https": "^1.0.0"
+  }
+}

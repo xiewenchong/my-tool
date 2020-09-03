@@ -1,0 +1,20 @@
+<!-- empty静态页面模板 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <%= require("html-loader!@/pages/header.html") %>
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <%= require("html-loader!@/pages/footer.html") %>
+</body>
+
+</html>

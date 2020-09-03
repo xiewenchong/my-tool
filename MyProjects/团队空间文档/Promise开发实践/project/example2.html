@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>例2</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <style>
+    div {
+        height: 50px;
+        width: 50px;
+        float: left;
+        margin-right: 10px;
+        display: block;
+        background-color: #090;
+        opacity: 1;
+    }
+    </style>
+</head>
+
+<body>
+    <button>Go</button>
+    <p>Ready...</p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+        /*$('button').on('click', function() {
+            $('p').append('Started...');
+
+            $('div').each(function(i) {
+                $(this).fadeIn().fadeOut(1000 * (i + 1));
+            });
+
+            $('div').promise().done(function() {
+                $('p').append(' Finished! ');
+            });
+        });*/
+
+        /*$('button').on('click', function() {
+            $('p').append('Started...');
+
+            var arr = [],
+
+                getDtd = function() {
+                    $('div').each(function(i) {
+                        var dtd = $.Deferred(),
+                            $this = $(this);
+
+                        $this.css({
+                            display: 'block'
+                        }).animate({
+                            opacity: 0,
+                        }, 1000 * (i + 1), function() {
+                            $this.css({
+                                display: 'none'
+                            });
+                            dtd.resolve();
+                        });
+
+                        arr.push(dtd);
+                    });
+
+                    return arr;
+                };
+
+            //$.when(...getDtd()).then(function() {
+            $.when.apply(null, getDtd()).then(function() {
+                $('p').append(' Finished! ');
+            });
+        });*/
+
+        /*$('button').on('click', function() {
+            $('p').append('Started...');
+
+            $('div').each(function(i) {
+                var $this = $(this);
+
+                $this.css({
+                    display: 'block'
+                }).animate({
+                    opacity: 0,
+                }, 1000 * (i + 1), function() {
+                    $this.css({
+                        display: 'none'
+                    });
+                });
+            });
+
+            $('div').promise().done(function() {
+                $('p').append(' Finished! ');
+            });
+        });*/
+
+
+    /*$('button').on('click', function() {
+        $('p').append('Started...');
+
+        var arr = [],
+
+            getDtd = function() {
+                $('div').each(function(i) {
+                    var dtd = $.Deferred(),
+                        $this = $(this),
+                        opacity = 1,
+                        totalT = 1000 * (i + 1),
+                        usedT = 0,
+                        v,
+                        nowT,
+                        lastT,
+                        diffT = 0;
+
+                    $this.css({
+                        display: 'block',
+                    });
+
+                    (function init() {
+                        var animate = window.requestAnimationFrame(init),
+                            nowT = new Date().getTime();
+
+                        if(lastT) {
+                            diffT = nowT - lastT;
+                        }
+
+                        lastT = nowT;
+
+                        usedT += diffT;
+                        opacity = 1 - usedT / totalT;
+
+                        $this.css({
+                            opacity: opacity
+                        });
+
+                        if(usedT > totalT) {
+                            window.cancelAnimationFrame(animate);
+                            $this.css({
+                                display: 'none',
+                            });
+                            dtd.resolve();
+                        }
+                    })();
+
+                    arr.push(dtd);
+                });
+
+                return arr;
+            };
+
+        $.when(...getDtd()).then(function() {
+            $('p').append(' Finished! ');
+        });
+    });*/
+
+
+    /*var d1 = function() {
+                var dtd = $.Deferred();
+
+                setTimeout(function() {
+
+                    console.log(2);
+
+                    dtd.resolve();
+
+                }, 400);
+
+                return dtd;
+
+            },
+        d2 = function() {
+                var dtd = $.Deferred();
+
+                setTimeout(function() {
+
+                    console.log(1);
+
+                    dtd.resolve();
+                }, 500);
+
+                return dtd;
+            };
+
+    $.when(d1(), d2()).then(function() {
+        console.log(3);
+    });*/
+
+
+    </script>
+</body>
+
+</html>

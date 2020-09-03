@@ -1,0 +1,7 @@
+// ¼ÆËãÐÐÊý
+    	getLineTotal(el) {
+			let styles = window.getComputedStyle(el, null),
+		   		totalHeight = styles.height.replace('px', ''),
+		    	lineHeight = styles.lineHeight.replace('px', '');
+		    return Math.ceil(totalHeight / lineHeight);
+		},

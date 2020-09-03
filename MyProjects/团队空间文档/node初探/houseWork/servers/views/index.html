@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>一个记家务的网站的首页</title>
+	<link rel="stylesheet" type="text/css" href="/static/style/index.css">
+</head>
+
+<body>
+	<div id="app">
+		<div class="form-part">
+			登录名：
+			<input type="text" v-model="username">
+		</div>
+		<div class="form-part">
+			密码：
+			<input type="password" v-model="password">
+		</div>
+		<div class="form-part">
+			请再次输入密码：
+			<input type="password" v-model="passwordCheck">
+		</div>
+		<button @click="login">登录</button>
+		<button @click="register">注册</button>
+	</div>
+	<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+	<script src="/static/js/index.js"></script>
+</body>
+
+</html>

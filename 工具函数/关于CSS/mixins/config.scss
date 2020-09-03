@@ -1,0 +1,53 @@
+$namespace: 'y';
+$element-separator: '__';
+$modifier-separator: '--';
+$state-prefix: 'is-';
+$browser-default-font-size:750;
+
+
+
+//颜色
+$disabled-color: #c0c4cc;
+
+$bg-color: #fff;
+$primary-bg-color: #139ae8;
+$success-bg-color: #63c831;
+$danger-bg-color: #ff2c27;
+$info-bg-color: #ff2c27;
+$warning-bg-color: #E6A23C;
+$disabled-bg-color: #f5f7fa;
+
+$font-color: #666;
+$primary-font-color:#fff;
+$success-font-color:#fff;
+$danger-font-color:#fff;
+
+$border-color: #ccc;
+$primary-border-color: $primary-bg-color;
+$success-border-color: $success-bg-color;
+$danger-border-color: $danger-bg-color;
+
+$focus-border-color: #363636;
+$primary-focus-border-color: #139ae8;
+$success-focus-border-color: #3c8d13;
+$danger-focus-border-color: #ff9000;
+
+
+
+//尺寸
+$normal-width: 200;
+$normal-height: 60;
+$normal-font-size: 40;
+
+$small-width: 160;
+$small-height: 52;
+$small-font-size: 32;
+
+$large-width: 280;
+$large-height: 80;
+$large-font-size: 48;
+
+$mini-width: 120;
+$mini-height: 44;
+$mini-font-size: 24;
+$isrem: false;

@@ -1,0 +1,89 @@
+// 对象的值为非对象
+isObjectValueEqual: function(a, b) {
+                var aProps = Object.getOwnPropertyNames(a);
+                 var bProps = Object.getOwnPropertyNames(b);
+        
+                 if (aProps.length != bProps.length) {
+                     return false;
+                 }
+        
+                for (var i = 0; i < aProps.length; i++) {
+                    var propName = aProps[i];
+                    var propA = a[propName];
+                    var propB = b[propName];
+                    if ( propA !== propB) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+
+
+//对象的值中依旧是包含对象嵌套（使用递归循环）
+function isObjectValueEqual(a, b) {
+     var aProps = Object.getOwnPropertyNames(a);
+     var bProps = Object.getOwnPropertyNames(b);
+        if (aProps.length != bProps.length) {
+            return false;
+        }
+           for (var i = 0; i < aProps.length; i++) {
+      var propName = aProps[i]
+
+      var propA = a[propName]
+      var propB = b[propName]
+      if (propA !== propB) {
+        if ((typeof (propA) === 'object')) {
+          if (this.isObjectValueEqual(propA, propB)) {
+            return true
+          } else {
+            return false
+          }
+        } else {
+          return false
+        }
+      } else {
+        return false
+      }
+    }
+        return true;
+    }
+    var a = {
+        id:1,
+        name:2,
+        c:{
+            age:3
+        }
+    };
+    var b = {
+        id:1,
+        name:2,
+        c:{
+            age:3
+        }
+    }
+    console.log(isObjectValueEqual(a,b));//true
+
+
+
+isObjectValueEqual(obj1,obj2){
+                console.log('obj12'+obj1,obj2)
+                var o1 = obj1 instanceof Object;
+                var o2 = obj2 instanceof Object;
+                if(!o1 || !o2){/* 判断不是对象 */
+                    return obj1 === obj2;
+                }
+                    if(Object.keys(obj1).length !== Object.keys(obj2).length){
+                    return false;
+                }
+                for(var attr in obj1){
+                    var t1 = obj1[attr] instanceof Object;
+                    var t2 = obj2[attr] instanceof Object;
+                    if(t1 && t2){
+                        return diff(obj1[attr],obj2[attr]);
+                    } else if(obj1[attr] !== obj2[attr]){
+                        return false;
+                    }
+                }
+                return true;
+            },

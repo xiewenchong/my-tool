@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .title{
+            width: 300px;
+            height: 20px;
+            background: aquamarine;
+        }
+        .title > span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            float: right;
+        }
+        .arrow-dis{
+            background: chartreuse;
+        }
+        .arrow-undis{
+            background: #ff6700;
+        }
+        .answer{
+            width: 300px;
+            height: 50px;
+            background: #ff6700;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="title">问题一<span class="arrow-undis"></span></div>
+    <div class="answer">这是问题一的答案</div>
+</div>
+<div>
+    <div class="title">问题二<span class="arrow-undis"></span></div>
+    <div class="answer">这是问题二的答案</div>
+</div>
+<div>
+    <div class="title">问题三<span class="arrow-undis"></span></div>
+    <div class="answer">这是问题三的答案</div>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+
+        $('.title').on('click',function(){
+            let status = $(this).children('span').attr('class');
+            if(status === 'arrow-undis'){
+                $(this).siblings('.answer').css("display","block");
+                $(this).children('span').removeClass('arrow-undis').addClass('arrow-dis');
+            }else{
+                $(this).siblings('.answer').css("display","none");
+                $(this).children('span').removeClass('arrow-dis').addClass('arrow-undis');
+            }
+        });
+
+    });
+</script>
+</html>

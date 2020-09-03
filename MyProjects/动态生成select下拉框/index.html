@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="vue.min.js"></script>
+ 
+</head>
+<body>
+<!--   <table class="table table-bordered table-striped table-condensed" id="recentPlayTable">  
+    <tr>  
+        <th>名称</th><th>时间</th><th>人数</th>  
+    </tr>  
+    
+    <template v-else>  
+    <tr v-for="item in items">  
+        <td>{{item.playname}}</td>  
+        <td>{{item.startDate}}</td>  
+        <td>{{item.guestNum}}</td>  
+    </tr>  
+    </template>  
+  </table>  --> 
+  <div class="wrap"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+    // var playTableVue = new Vue({  
+    //     el:"#recentPlayTable",  
+    //     data:{  
+    //         items:'',  
+    //         loaded:false  
+    //     },
+    //     methods:{
+    //       getData:function(){
+    //         console.log(this.items);
+    //         var that = this;
+    //         $(function (){  
+    //           $.ajax({
+    //             url:'data.json',
+    //             type:'get',
+    //             dataType:'json',
+                
+    //             success:function(data){
+    //               that.items=data;
+    //               console.log(that.items);
+
+    //             }
+    //           });
+    //         });  
+    //       }
+    //     },
+    //     mounted(){
+    //       this.getData();
+    //     }  
+    // }); 
+    var data = [
+  {
+    "flink": "https://www.baidu.com/",
+    "clist": [  
+      {
+        "flink": "[图片]https://lanhuapp.com/",
+        "name": "正大",
+        "ptypename": "高校网站",
+        "remark": "的方法",
+        "id": "112",
+        "orlast": 1,
+        "ptypeid": "111",
+        "pids": "111"
+      },
+      {
+        "flink": "aagtgf",
+        "name": "aa",
+        "ptypename": "高校网站",
+        "remark": "aa",
+        "id": "8429f88d0c2542b0b8d9a939ff572aa8",
+        "orlast": 1,
+        "ptypeid": "111",
+        "pids": null
+      }
+    ],
+    "name": "高校网站",
+    "ptypename": "高校网站",
+    "remark": "gx",
+    "id": "111",
+    "orlast": 0,
+    "ptypeid": "0",
+    "pids": "0"
+  },
+  {
+    "flink": "",
+    "clist": [
+      {
+        "flink": "https://www.baidu.com/",
+        "name": "经贸",
+        "ptypename": "中等职业技术学校",
+        "remark": "fffgggg",
+        "id": "dca11dfd6f224471bb13e19a5a7400f0",
+        "orlast": 1,
+        "ptypeid": "54fe1d985fd546eea7e2bc9c6ff43e91",
+        "pids": null
+      }
+    ],
+    "name": "中等职业技术学校",
+    "ptypename": "中等职业技术学校",
+    "remark": "tttyy",
+    "id": "54fe1d985fd546eea7e2bc9c6ff43e91",
+    "orlast": 0,
+    "ptypeid": "0",
+    "pids": null
+  },
+  {
+    "flink": "",
+    "clist": [
+      {
+        "flink": "https://www.baidu.com/",
+        "name": "周大福",
+        "ptypename": "兄弟协会网站",
+        "remark": "mmm",
+        "id": "635b5f07579548c2bc700fe672ad00bd",
+        "orlast": 1,
+        "ptypeid": "a9b62704f862432e81a1a75573bc5339",
+        "pids": null
+      }
+    ],
+    "name": "兄弟协会网站",
+    "ptypename": "兄弟协会网站",
+    "remark": "aaa",
+    "id": "a9b62704f862432e81a1a75573bc5339",
+    "orlast": 0,
+    "ptypeid": "0",
+    "pids": null
+  }
+]
+ 
+    data.forEach(function(a,index){
+      $('.wrap').append(`
+        <select class="item${index}">
+          <option>${a.name}</option>
+        </select>
+      `);
+      a.clist.forEach(function(aa){
+        $('.wrap').children().eq(index).append(`<option>${aa.name}</option>`);
+      });
+    });
+
+</script>  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #scroll-item{
+            margin-top: 20px;
+        }
+        #scroll-item li{
+            width: 400px;
+            height: 120px;
+            margin-top: 300px;
+            margin-left: 100px;
+            background: aquamarine;
+            font-size: 30px;
+        }
+        .item-border{
+            border: 10px solid #ff6700;
+        }
+    </style>
+</head>
+<body>
+<ul id="scroll-item">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+</body>
+<script>
+    $(document).ready(function(){
+
+        $(document).scroll(function() {
+            let liArr = $('#scroll-item > li');
+            let scrollTop = $(document).scrollTop();//页面滚动的距离
+            for(let i=0,len=liArr.length;i<len;i++){
+                let top = liArr[i].offsetTop - scrollTop;//每个元素距离页面顶部距离
+                if(top >= 300 && top <= 600){//元素距离浏览器窗口 顶部 的距离
+                    if($(liArr).eq(i).prop("className") !== 'item-border'){
+                        $(liArr).eq(i).addClass('item-border');
+                        $(liArr).eq(i).siblings().removeClass('item-border');
+                    }
+                }
+            }
+        });
+
+    });
+</script>
+</html>

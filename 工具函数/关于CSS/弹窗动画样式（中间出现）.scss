@@ -1,0 +1,58 @@
+//说明、通知类弹框
+.Layer-FullScreen.noticeType-Bulletbox {
+    .main {
+        transform: translate(-50%, -50%);
+    }
+    &.show-animation {
+        animation: Bulletbox_modal_in_animation 0.2s;
+        animation-fill-mode: forwards;
+        .main {
+            animation: Bulletbox__content_in_animation 0.2s;
+            animation-fill-mode: forwards;
+        }
+        &.fade-out {
+            animation: Bulletbox__modal_out_animation 0.2s;
+            animation-fill-mode: forwards;
+            .main {
+                animation: Bulletbox__content_out_animation 0.2s;
+                animation-fill-mode: forwards;
+            }
+        }
+        @keyframes Bulletbox_modal_in_animation {
+            0% {
+                background-color: rgba(0, 0, 0, 0);
+            }
+            100% {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+        @keyframes Bulletbox__content_in_animation {
+            0% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0.1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes Bulletbox__modal_out_animation {
+            0% {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+        @keyframes Bulletbox__content_out_animation {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/user.css">
+</head>
+
+<body>
+    <div id="app">
+        <p>Hello,{{username}}</p>
+        <p v-if="workers.length < 1 || ownHws.length < 1">你还没有添加过家务 || 合作人，点击下方按钮添加吧~</p>
+        <div class="btns">
+            <button @click="showAddHwBox=true;">添加家务</button>
+            <button @click="showAddWorkBox=true;" v-if="ownHws.length > 0">做了件家务</button>
+            <!-- <button @click="showAddWorker=true;">添加合作人</button> -->
+        </div>
+
+        <template v-if="works.length > 0">
+            <h2>家务记录表</h2>
+            <table>
+                <thead>
+                    <th>家务</th>
+                    <th>状态</th>
+                    <th>发起时间</th>
+                    <th>通过时间</th>
+                </thead>
+                <tbody>
+                    <tr v-for="item in works">
+                        <td>{{item.name}}</td>
+                        <td>{{stateMap[item.state]}}</td>
+                        <td>{{item.launchTime | dateParse}}</td>
+                        <td>{{item.passTime | dateParse}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+
+        <!-- 添加家务盒子 -->
+        <div class="addHWBox" v-show="showAddHwBox">
+            <div class="mask" @click="showAddHwBox=false;"></div>
+            <div class="addHW">
+                <div class="title">添加家务</div>
+                <div class="form-part">
+                    家务名：
+                    <input type="text" v-model="hwName">
+                </div>
+                <div class="form-part">
+                    家务分值：
+                    <input type="number" v-model="hwScore">
+                </div>
+                <button @click="addHw">添加家务</button>
+            </div>
+        </div>
+        <!-- ./ 添加家务盒子 -->
+
+        <!-- 做了件家务盒子 -->
+        <div class="addWorkBox" v-show="showAddWorkBox">
+            <div class="mask" @click="showAddWorkBox=false;"></div>
+            <div class="addWork">
+                <div class="title">做了件家务</div>
+                <div class="form-part">
+                    <p v-for="item in ownHws">
+                        <input type="radio" name="addHwName" v-model="addHwId" :value="item._id"> {{item.name}}
+                    </p>
+                </div>
+                <button @click="addWork">添加家务记录</button>
+            </div>
+        </div>
+        <!-- ./ 做了件家务盒子 -->
+    </div>
+    <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+    <script src="/static/js/user.js"></script>
+</body>
+
+</html>

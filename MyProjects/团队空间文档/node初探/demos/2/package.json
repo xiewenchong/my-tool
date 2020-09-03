@@ -1,0 +1,7 @@
+{
+  "name": "demos",
+  "dependencies": {},
+  "devDependencies": {
+    "formidable": "^1.2.1"
+  }
+}

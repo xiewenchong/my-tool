@@ -1,0 +1,312 @@
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul li {
+			list-style: none;
+		}
+
+		#app {
+			width: 7.5rem;
+			height: 13.34rem;
+			margin:auto;
+			background-image: url("../images/bg.png");
+			position: relative;
+
+		}
+		input::-webkit-input-placeholder { /* WebKit browsers */ 
+			color: #919191; 
+		} 
+
+		input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+			color: #919191;
+		}
+
+		input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+			color: #919191;
+		} 
+
+		input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+			color: #919191;
+		}
+
+		form {
+			display: inline-block;
+			width: 7.16rem;
+			height: 3.75rem;
+			background-image: url("../images/form.png");
+			/*background-size: contain;*/
+			background-repeat: no-repeat;			
+			border-radius: 0.12rem;
+			margin-left: 0.17rem;
+			margin-top: 1.58rem;
+
+			
+		}
+		
+		#hotel, .name {
+			text-align: center;
+			position: relative;
+		}
+		#hotel p:nth-child(2) {
+			display: inline;
+			width: 5.4rem;
+			height: 0.40rem;
+			font-size: 0.3rem;
+			color: #919191;
+			position: absolute;
+			top: 0.4rem;
+			left: 1.05rem;
+			text-align: left;
+			cursor: pointer;
+		}
+
+		.name input {
+			width: 5.4rem;
+			height: 0.40rem;
+			position: absolute;
+			left: 1.05rem;
+			top: 0.05rem;
+			font-size: 0.3rem;
+			border: none;
+			outline: none;
+		}
+
+		.hotel_icon {
+			width: 0.36rem;
+			height: 0.36rem;
+			background-image: url("../images/hotel_icon.png");
+			background-size: contain;
+			display: inline-block;
+			vertical-align: middle;
+			position: absolute;
+			left: 0.45rem;
+			top: 0.4rem;
+		}
+		.user_icon {
+			width: 0.32rem;
+			height: 0.4rem;
+			background-image: url("../images/user_icon.png");
+			background-size: contain;
+			display: inline-block;
+			vertical-align:middle;
+			position: absolute;
+			left: 0.45rem;
+			
+		}
+
+		.line1 {
+			width: 6.3rem;
+			height: 0.01rem;
+			background-image: url("../images/line.png");
+			background-size: contain;
+			display: inline-block;
+			
+		}
+
+		.name .line1 {
+			margin-bottom: 0.3rem;
+		}
+
+		.reback {
+			width: 0.17rem;
+			height: 0.28rem;
+			background-image: url("../images/reback_icon.png");
+			background-size: contain;
+			display: inline-block;
+			position: absolute;
+			top: 0.5rem;
+			right: 0.45rem;
+			cursor: pointer;
+		}
+		
+		.btn {
+			position: relative;
+		}
+
+		.reset {
+			width: 3rem;
+			height: 0.8rem;
+			background-image: url("../images/resetBtn.png");
+			border-radius: 0.05rem;
+			border: none;
+			position: absolute;
+			left: 0.43rem;
+			bottom: -0.63rem;
+			font-size: 0.3rem;
+			color: #333;
+			outline:none;
+			cursor: pointer;
+		}
+
+		.submit {
+			width: 3rem;
+			height: 0.8rem;
+			background-image: url("../images/queryBtn.png");
+			border-radius: 0.05rem;
+			border: none;
+			position: absolute;
+			right: 0.43rem;
+			bottom: -0.63rem;
+			font-size: 0.3rem;
+			color: #fff;
+			outline:none;
+			cursor: pointer;
+		}
+
+
+
+		/*中间暗层*/
+		#light {
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			display: none;
+		}
+
+
+
+		/*弹窗*/
+		#main {
+			width: 6.9rem;
+			height: 6.06rem;
+			position: absolute;
+			left: 4%;
+			top: 46%;
+			transform: translateY(-50%);
+			background-color: #fff;
+			z-index: 999;
+			border-radius: 0.12rem;
+			display: none;
+		}
+
+		.popup ul li {
+			width: 6.5rem;
+			height: 0.95rem;
+			border-bottom: solid 0.01rem #ccc;
+			line-height: 0.95rem;
+			font-size: 0.3rem;
+			padding-left: 0.4rem;
+			position: relative;
+			cursor: pointer;
+		}
+
+		#main .hotel_title {
+			text-align: center;
+			font-size: 0.24rem;
+			color: #919191;
+			cursor: auto;
+		}
+
+		#main #close {
+			width: 0.28rem;
+			height: 0.28rem;
+			background-image: url("../images/close_icon.png");
+			background-size: contain;
+			cursor: pointer;
+		}
+
+		#main .selected {
+			width: 0.42rem;
+			height: 0.26rem;
+			background-image: url("../images/selected.png");
+			background-size: contain;
+			display: none;
+		}
+		.selected, #close {
+			display: inline-block;
+			position: absolute;
+			right: 0.3rem;
+			top: 0.34rem;
+			
+		}
+
+
+
+		/*搜索内容*/
+		#content li{
+			width: 7.16rem;
+			height: 2.42rem;
+			background-image: url("../images/list bg.png");
+			display: block; 
+			margin: auto;
+			position: relative;
+		}
+		
+		#content .content_bg, #content .content_bg2 {
+			width: 1.44rem;
+			height: 1.44rem;
+			background-size: contain;
+			display: inline-block;
+			position: absolute;
+			left: 0.37rem;
+			top: 0.54rem;
+		}
+
+		#content .content_bg {
+			background-image: url("../images/img bg.png");
+		}
+		
+		#content .content_bg2 {
+			background-image: url("../images/img bg2.png");
+		}
+
+		#content .content_news {
+			width: 3.65rem;
+			height: 1.44rem;
+			font-size: 0.28rem;
+			color: #828282;
+			line-height: 0.7rem;
+			position: absolute;
+			left: 2.05rem;
+			top: 0.5rem;
+		}
+
+		#content .content_news .news_name {
+			font-size: 0.32rem;
+			font-weight: bold;
+			color: #494949;
+		}
+
+		#content .evaluate {
+			width: 1.05rem;
+			height: 0.3rem;
+			padding-bottom: 15px;
+			position: absolute;
+			top: 0.71rem;
+			right: 0.4rem;
+			font-size: 0.28rem;
+			color: #FF721F;
+			line-height: 0.26rem;
+		}
+	
+		#content .evaluate span {
+			width: 0.17rem;
+			height: 0.28rem;
+			background-image: url("../images/reback_icon.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+			float: right;
+		}
+
+		/*404*/
+		#error img {
+			display: block;
+			margin:0.65rem auto;
+		}
+
+		#error p {
+			width: 5.3rem;
+			margin: auto;
+			font-size: 0.26rem; 
+			color: #828282;
+		}
+
+
+

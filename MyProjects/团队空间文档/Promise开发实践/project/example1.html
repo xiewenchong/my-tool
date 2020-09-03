@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>例1</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+</head>
+
+<body>
+	<div class="content"></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+		/*$.ajax('test1.html')
+	　　.done(function(){ 
+			alert('哈哈，成功了！'); 
+		})
+	　　.fail(function(){ 
+			alert('出错啦！'); 
+		});*/
+
+		/*$.ajax('test1.html')
+	　　.then(function(){ 
+			alert('哈哈，成功了！'); 
+		}, function(){ 
+			alert('出错啦！');
+		});*/
+
+		/*$.when($.ajax('test1.html'), $.ajax('test2.html'))
+		.then(function(a, b){ 
+			alert('哈哈，成功了！');
+		}, function(){
+			alert('出错啦！');
+		})
+		.done(function(a, b) {
+			alert('哈哈，成功了！');
+		})
+		.fail(function(){ 
+			alert('出错啦！');
+		})
+		.always(function() {
+			alert('总是执行');
+		});*/
+
+		/*var wait = function(){
+			var dtd = $.Deferred(), //在函数内部，新建一个Deferred对象
+		　　　　tasks = function(){
+		　　　　　　alert("执行完毕！");
+		　　　　　　dtd.resolve(); // 改变Deferred对象的执行状态 成功
+					dtd.reject(); // 改变Deferred对象的执行状态 失败
+		　　　　};
+
+	　　　　setTimeout(tasks, 2000);
+	　　　　return dtd.promise(); // 返回promise对象
+	　　};
+
+	　　$.when(wait())
+	　　.done(function(){ alert("哈哈，成功了！"); })
+	　　.fail(function(){ alert("出错啦！"); });*/
+
+		/*$.ajax('test1.html')
+		.then(function(a) {
+			alert('哈哈，test1成功了！');
+			return $.ajax('test2.html');
+		})
+		.then(function(b) {
+			alert('哈哈，test2成功了！');
+		});*/
+
+		
+
+	</script>
+</body>
+</html>

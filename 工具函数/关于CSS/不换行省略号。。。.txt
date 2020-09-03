@@ -1,0 +1,49 @@
+1、自动换行
+
+div{
+   word-wrap:break-word;
+   word-break:normal;
+}
+2、强制不换行
+
+div{
+   white-space:nowrap;
+}
+3、强制英文单词换行
+
+div{
+   word-break:break-all;
+}
+4、单行文本不换行多余文本显示省略号
+
+复制代码
+div{
+   width:200px;
+   white-space:nowrap;
+   overflow:hidden;
+   text-overflow:ellipsis;
+}
+复制代码
+5、多行文本超出隐藏多余文本显示省略号
+
+复制代码
+div{
+   display:-webkit-box;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   -webkit-line-clamp:3;
+   -webkit-box-orient:vertical;
+}
+复制代码
+6、table表格中单元格单行文本不换行
+
+复制代码
+table{
+   table-layout:fixed;
+}
+table tr td{
+   width:60%;
+   white-space:nowrap;
+   overflow:hidden;
+   text-overflow:ellipsis;
+}

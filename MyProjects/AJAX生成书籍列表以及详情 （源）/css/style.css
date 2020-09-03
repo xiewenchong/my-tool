@@ -1,0 +1,133 @@
+* { margin: 0; padding: 0; }
+html{font-size: 55.2px;}
+html,body { background: #eee; }
+ul,li { list-style: none; }
+a { text-decoration: none; }
+img { vertical-align: middle; }
+.container {  
+    max-width: 640px;  
+    margin: 0 auto;  
+    overflow-x: hidden;  
+}      	
+
+.header{
+	height: 0.88rem;
+}
+.header_inner{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	max-width: 640px;
+	height: 0.88rem;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 0.24rem;
+	border-bottom: 0.02rem solid #80ccd6;
+	background: #fff;
+}
+.header_cont{
+	text-align: center;
+	padding: 0 0.4rem;
+	line-height: 0.86rem;
+	font-size: 15px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.sec_li{
+	float: left;
+	width: 50%;
+	margin-bottom: 0.1rem;
+}
+.lp_li_a{
+	display: block;
+	padding: 0.3rem 0;
+	margin: 0 0.05rem;
+	text-align: center;
+	background: #fff;
+}
+.lp_li_a p{
+	text-align: center;
+}
+.lp_li_imgWrap{
+	padding: 0.24rem 0;
+}
+.lp_li_imgWrap img{
+	width: auto;
+	height: 2.3rem;
+}
+.lp_li_name{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 16px;
+	color: #333;
+}
+.lp_li_price{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 16px;
+	color: #fb3b3b;
+}
+.detail {  
+    padding: 0.24rem;  
+    font-size: 12px;
+}
+img {  
+    display: block;  
+    width: 80%;  
+    margin: 0 auto 0.2rem;
+}
+p {  
+    font-size: 14px;  
+    line-height: 0.5rem;  
+    text-align: justify;  
+    padding-bottom: 0.24rem;
+}  
+.flexWrap {  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: flex;
+}
+.flex {  
+    -webkit-box-flex: 1;  
+        -ms-flex: 1;  
+            flex: 1;
+}
+.header {  
+    height: 0.88rem;
+}
+.header_inner {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    z-index: 99;  
+    max-width: 640px;  
+    height: 0.88rem;  
+    box-sizing: border-box;  
+    margin: 0 auto;  
+    padding: 0 0.24rem;  
+    border-bottom: 0.02rem solid #80ccd6;  
+    background-color: #fff;
+}
+.header_btn {  
+    width: 1rem;  
+    height: 100%;  
+    background-repeat: no-repeat;
+}
+.header_btn_back {  
+    line-height: 0.86rem;
+}
+.header_cont {  
+    text-align: center;  
+    padding: 0 0.4rem;  
+    line-height: 0.86rem;  
+    font-size: 15px;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+}
+.header_btn:active {  
+    opacity: 0.7;
+}  

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>canvas自定义画板</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        margin: 0 auto;
+        width: 600px;
+        /*text-align: center;*/
+    }
+    #canvas{
+        border: 2px solid #ff6700;
+        cursor:crosshair;
+        /*不能用这种方式给canvas设置宽高*/
+        /*width: 600px;*/
+        /*height: 300px;*/
+    }
+    .btn{
+        width:70px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #aaa;/*去掉<button>默认边框*/
+        outline:none;/*去掉<button>选中时的默认边框*/
+    }
+    #image_png{
+        width: 300px;
+        height: 150px;
+        border:  2px solid #ff6700;
+        display: block;
+        margin: 10px auto;
+     }
+    .section{
+        margin-top: 10px;
+    }
+    .info{
+        color: #f0f;
+        font-size: 14px;
+    }
+    .bg{
+        background: #ff6700;
+    }
+    .fw{
+        font-weight: 700;
+    }
+</style>
+<body>
+<div id="container">
+    <canvas id="canvas" width="600" height="300">浏览器不支持canvas<!-- 如果不支持会显示这段文字 --></canvas>
+    <div class="section">
+        <span class="info">选择画笔颜色：</span>
+        <button class="btn colorBtn fw" style="background-color:yellow;" onclick='setPenColor("yellow");'>YELLOW</button>
+        <button class="btn colorBtn" style="background-color:red;" onclick='setPenColor("red");'>RED</button>
+        <button class="btn colorBtn" style="background-color:blue;" onclick='setPenColor("blue");'>BLUE</button>
+        <button class="btn colorBtn" style="background-color:green;" onclick='setPenColor("green");'>GREEN</button>
+        <button class="btn colorBtn" style="background-color:black;color:#fff" onclick='setPenColor("black");'>BLACK</button>
+    </div>
+    <div class="section">
+        <span class="info">选择橡皮擦：</span>
+        <button class="btn colorBtn" style="background-color:white;" onclick='setPenColor("white");'>WHITE</button>
+    </div>
+    <div class="section">
+        <span class="info">选择画笔大小：</span>
+        <button class="btn bg penBtn fw" onclick="setPenWidth(4);">4PX</button>
+        <button class="btn bg penBtn" onclick="setPenWidth(8);">8PX</button>
+        <button class="btn bg penBtn" onclick="setPenWidth(16);">16PX</button>
+    </div>
+    <div class="section">
+        <span class="info">输出画板内容到下面的图片：</span>
+        <button class="btn" onclick="createImage();">EXPORT</button>
+    </div>
+    <img id="image_png">
+</div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    var canvas = document.getElementById('canvas'); //获取canvas标签
+    var ctx = canvas.getContext("2d");//创建 context 对象
+    ctx.fillStyle = "#ff7777";//画布背景色
+    ctx.fillRect(0,0,600,300);//在画布上绘制 600x300 的矩形，从左上角开始 (0,0)
+    var penClick = false; //画笔按下标记
+    var startAxisX = 0;
+    var startAxisY = 0;
+    var penColor = "yellow";//画笔颜色
+    var penWidth = 4;//画笔粗细
+    //画笔颜色选中状态
+    $(".colorBtn").on("click", function(event){
+        $(".colorBtn").removeClass('fw')
+        $(this).addClass('fw')
+    });
+    //画笔粗细选中状态
+    $(".penBtn").on("click", function(event){
+        $(this).addClass('fw').siblings().removeClass('fw')
+    });
+    //设置画笔颜色
+    function setPenColor(color){
+        penColor = color;
+    }
+    //设置画笔粗细
+    function setPenWidth(type){
+        penWidth = type
+    }
+    canvas.addEventListener("mousemove",drawing,true); //鼠标移动事件
+    canvas.addEventListener("mousedown",penDown,false); //鼠标按下事件
+    canvas.addEventListener("mouseup",penUp,false); //鼠标弹起事件
+    function penDown(event){
+        penClick = true;
+        startAxisX = event.pageX;
+        startAxisY = event.pageY;
+    }
+    function penUp(){
+        penClick = false;
+    }
+    function drawing(event){
+        if(!penClick)
+                return;
+        var stopAxisX = event.pageX;
+        var stopAxisY = event.pageY;
+        ctx.beginPath();
+        //由于整体设置了水平居中，因此需要做特殊处理：window.screen.availWidth/2 -300
+        ctx.moveTo(startAxisX-(window.screen.availWidth/2 -300),startAxisY);//moveTo(x,y) 定义线条开始坐标
+        ctx.lineTo(stopAxisX-(window.screen.availWidth/2 -300),stopAxisY);//lineTo(x,y) 定义线条结束坐标
+        ctx.strokeStyle = penColor;
+        ctx.lineWidth = penWidth;
+        ctx.lineCap = "round";
+        ctx.stroke();// stroke() 方法来绘制线条
+        startAxisX = stopAxisX;
+        startAxisY = stopAxisY;
+    }
+    function createImage() {
+        var img_png_src = canvas.toDataURL("image/png"); //将画板保存为图片格式的函数
+        console.log('=====',img_png_src);//data:image/png;base64,iVBOR.....
+        document.getElementById("image_png").src = img_png_src;
+    }
+</script>
+</html>

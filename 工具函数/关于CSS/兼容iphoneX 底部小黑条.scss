@@ -1,0 +1,12 @@
+//兼容iPhone X
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    @supports (bottom: constant(safe-area-inset-bottom)) {
+        body {
+            padding-bottom: constant(safe-area-inset-bottom);
+        }
+        .foot,
+        .component-select-standard {
+            bottom: constant(safe-area-inset-bottom);
+        }
+    }
+}
