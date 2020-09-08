@@ -1,0 +1,358 @@
+[v-cloak] { display: none; }
+.stock-content {}
+.stock-content .inner-pop-box {
+    position: relative;
+    /* height: 100%; */
+    /* overflow: hidden; */
+    /* background: #fff; */
+    /* overflow: auto; */
+    /* border-radius: 10px 10px 0px 0px; */
+}
+
+.stock-content .inner-title {
+    height: 60px;
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 200;
+    max-width: 640px;
+}
+
+.stock-content .inner-title .select-date {
+    display: block;
+    height: 100%;
+    font-size: 17px;
+    line-height: 60px;
+    text-align: center;
+    color:rgba(51,51,51,1);
+}
+.stock-content .inner-title .go-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 44px;
+    height: 60px;
+    background: url(//qiniu-cdn7.jinxidao.com/saasMini/res/left.png) center no-repeat;
+    background-size: 20px auto;
+}
+
+/* .stock-content .inner-title .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/close-grey.png) center no-repeat;
+    background-size: 12px auto;
+} */
+
+.stock-content .inner-title .return {
+    display: inline-block;
+    width: 56px;
+    line-height: 40px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.stock-content .calendar-cldweek {
+    display: -webkit-flex;
+    display: flex;
+    height: 32px;
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 60px;
+    width: 100%;
+    z-index: 200;
+    background: #fff;
+    max-width: 640px;
+}
+.stock-content .calendar-cldweek.no-top {
+    top: 0
+}
+
+.stock-content .calendar-cldweek:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #E4E6E7;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.stock-content .calendar-cldweek li {
+    -webkit-flex: 1;
+    flex: 1;
+    color: #585858;
+    font-size: 13px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.stock-content .selected-product {
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.stock-content .selected-product img {
+    float: left;
+    margin-right: 5px;
+}
+
+.stock-content .selected-product .miaoshu {
+    color: #666;
+}
+
+.calendar {
+    position: relative;
+    top: 92px;
+}
+.calendar.no-top {
+    top: 32px;
+}
+
+.calendar .calendar-cldweek {
+    overflow: hidden;
+}
+
+.calendar .calendar-cldweek li {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 14.285%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: transparent solid;
+    border-width: 1px 1px 1px 0;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    box-sizing: border-box;
+}
+
+.calendar .calendar-body {
+    overflow: hidden;
+}
+.calendar .calendar-body ul.no-display{
+    display: none;
+}
+
+.calendar .calendar-body li.dayDate {
+    padding: 1px 0 4px 0;
+}
+
+.calendar .calendar-body li.dayDate.nodata .daynum,
+.calendar .calendar-body li.dayDate.nodata .dayprice {
+    color: #BCBEC1 !important;
+}
+
+.calendar .calendar-body li.dayDate .stock {
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+    display: block;
+    /* width: 14px;
+    height: 14px; */
+}
+
+.calendar .calendar-body li.dayDate .stock.enouth {
+    /* background: url(../images/enouth.png) center no-repeat; */
+    /* background-size: 14px auto; */
+    /* height: 28px;
+    background: rgba(255,73,0,1);
+    opacity: 1;
+    border-radius: 14px 14px 14px 0px;
+    transform: scale(.5);
+    font-size: 18px;
+    right: auto;
+    left: 33%;
+    top: -24%;
+    padding: 0 3px;
+    width: auto;
+    color: #fff;
+    min-width: 40px; */
+
+    /* transform: scale(.9); */
+    font-size: 10px;
+    width: auto;
+    color: #919191;
+}
+.calendar .calendar-body li.dayDate:nth-child(7n+1) .stock {
+    color: #FF7124;
+}
+.calendar .calendar-body li.dayDate:nth-child(7n+7) .stock {
+    color: #FF7124;
+}
+
+.calendar .calendar-body li.dayDate .stock.enouth .roomCount {
+    position: relative;
+    top: 2px;
+}
+
+/* .calendar .calendar-body li.dayDate .stock.little {
+    background: url(../images/little.png) center no-repeat;
+    background-size: 14px auto;
+} */
+
+.calendar .calendar-body li {
+    position: relative;
+    margin-bottom: 5px;
+    color: #333;
+    z-index: 100;
+    box-sizing: border-box;
+    /* background: #fff; */
+    float: left;
+    width: 14.285%;
+    /* overflow: hidden; */
+    text-align: center;
+}
+
+.calendar .calendar-body .dayprice {
+    /* display: block;
+    line-height: 16px;
+    height: 16px;
+    font-size: 10px;
+    color: #919191; */
+    /* display: inline-block; */
+    line-height: 16px;
+    height: 16px;
+    color: #919191;
+    height: 14px;
+    background: rgba(255,94,29,1);
+    opacity: 1;
+    border-radius: 14px;
+    font-size: 9px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 14px;
+    color: rgba(255,255,255,1);
+    padding: 1px 2px;
+    /* transform: scale(.8); */
+}
+
+.calendar .calendar-body .dayprice.word {
+    font-size: 10px;
+    opacity: 0;
+}
+
+.calendar .calendar-body li:nth-child(7n+7) {
+    color: #FF7124;
+}
+
+.calendar .calendar-body li:nth-child(7n+7) .daynum {
+    color: #FF7124;
+}
+
+.calendar .calendar-body li:nth-child(7n+7) .dayprice {
+    color: #fff;
+}
+
+.calendar .calendar-body li:nth-child(7n+1) {
+    color: #FF7124;
+}
+
+.calendar .calendar-body li:nth-child(7n+1) .daynum {
+    color: #FF7124;
+}
+
+.calendar .calendar-body li:nth-child(7n+1) .dayprice {
+    color: #fff;
+}
+
+.calendar .calendar-body .daynum {
+    display: block;
+    line-height: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.calendar .calendar-body .hasSpecialDay {
+    font-size: 12px;
+}
+
+.calendar .calendar-body li.cmonth {
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    line-height: 58px;
+    text-align: left;
+    font-size: 15px;
+    margin-top: -1px;
+    color: #333 !important;
+    font-weight: 700;
+}
+.calendar .calendar-body li.cmonth.no-display {
+    display: none;
+}
+
+.calendar .clsWeek a {
+    display: block;
+    color: #ff7e00;
+}
+
+.calendar .calendar-body .weekDate {
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.calendar .calendar-body li i {
+    position: absolute;
+    z-index: 6;
+    right: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+}
+
+.calendar .calendar-body .holiday {
+    background: url(//qiniu-cdn0.jinxidao.com/m/icons/jb.png) right top no-repeat;
+    background-size: 15px 15px;
+}
+
+.calendar .calendar-body .overtime {
+    background: url(//qiniu-cdn0.jinxidao.com/m/icons/jb1.png) right top no-repeat;
+    background-size: 15px 15px;
+}
+
+.calendar .calendar-body .holiday {
+    background: url(//qiniu-cdn0.jinxidao.com/m/icons/jb.png) right top no-repeat;
+    background-size: 15px 15px;
+}
+
+.calendar .calendar-body .overtime {
+    background: url(//qiniu-cdn0.jinxidao.com/m/icons/jb1.png) right top no-repeat;
+    background-size: 15px 15px;
+}
+
+.calendar .calendar-body .privilege {
+    background: url(//qiniu-cdn7.jinxidao.com/m/images/icon_privilege.png?v=1.1) right top no-repeat;
+    background-size: 15px 15px;
+}
+
+.calendar .calendar-body .noDataClass a {
+    color: #BCBEC1;
+}
+
+.calendar .calendar-body .daynum.nodata {
+    color: #BCBEC1 !important;
+}
+
+.calendar .calendar-body .dayprice.nodata {
+    color: #BCBEC1 !important;
+}
+
+.calendar .calendar-body li.cant span {
+    color: #bbb;
+}

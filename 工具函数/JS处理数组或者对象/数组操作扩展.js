@@ -5,16 +5,29 @@
 /** 数组拓展工具类 **/
 
 const _array = {
-  // 数组去重
-    removeReapt: (arrOld) => {
-      var arr=[];
-      for(var i=0,len=arrOld.length;i<len;i++){
-        if(arr.indexOf(arrOld[i])==-1){
-        arr.push(arrOld[i]);
-        }
+  //计数数组中某个值的出现次数
+  countOccurrences: (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a + 0), 0),
+  // 计算数组中每个元素出现的个数
+  d = arr => {
+    arr.reduce((a, b) => {
+      if (b in a) {
+        a[b]++;
+      } else {
+        a[b] = 1;
       }
-      return arr;
+      return a;
+    }, {});
+  },
+  // 数组去重
+  removeReapt: (arrOld) => {
+    var arr = [];
+    for (var i = 0, len = arrOld.length; i < len; i++) {
+      if (arr.indexOf(arrOld[i]) == -1) {
+        arr.push(arrOld[i]);
+      }
     }
+    return arr;
+  },
   /**
    * 往数组中添加元素，若数组中已有此元素，则删除重复元素，添加新的元素
    * @param array
@@ -22,7 +35,7 @@ const _array = {
    * @returns {*}
    */
    update: (array, item) => {
-    if(!Array.isArray(array)) {
+    if (!Array.isArray(array)) {
       return []
     }
     for (let i = 0; i < array.length; i++) {
@@ -41,11 +54,11 @@ const _array = {
    * @param item
    * @returns {*}
    */
-   add: (array, item) => {
-    if(!Array.isArray(array)) {
+  add: (array, item) => {
+    if (!Array.isArray(array)) {
       return []
     }
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
       let value = array[i]
       if (item === value) {
         return array
@@ -61,8 +74,8 @@ const _array = {
    * @param item
    * @returns {*}
    */
-   push: (array, item) => {
-    if(!Array.isArray(array)) {
+  push: (array, item) => {
+    if (!Array.isArray(array)) {
       return []
     }
     array.push(item)
@@ -75,8 +88,8 @@ const _array = {
    * @param item
    * @returns {*}
    */
-   unshift: (array, item) => {
-    if(!Array.isArray(array)) {
+  unshift: (array, item) => {
+    if (!Array.isArray(array)) {
       return []
     }
     array.unshift(item)
@@ -92,7 +105,7 @@ const _array = {
    * @private
    */
   _splice: (array, location, item) => {
-    if(!Array.isArray(array)) {
+    if (!Array.isArray(array)) {
       return []
     }
     array.splice(location, 0, item)
@@ -106,8 +119,8 @@ const _array = {
    * @param location
    * @returns {*}
    */
-   splice_A: (array, location, length, item) => {
-    if(!Array.isArray(array)) {
+  splice_A: (array, location, length, item) => {
+    if (!Array.isArray(array)) {
       return []
     }
     array.splice(location, length, item)
@@ -120,11 +133,11 @@ const _array = {
    * @param item
    * @returns {*}
    */
-   remove: (array, item) => {
-    if(!Array.isArray(array)) {
+  remove: (array, item) => {
+    if (!Array.isArray(array)) {
       return []
     }
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
       let value = array[i]
       if (item === value) {
         array.splice(i, 1)
@@ -138,8 +151,8 @@ const _array = {
    * @param array
    * @returns {*}
    */
-   pop: (array) => {
-    if(!Array.isArray(array)) {
+  pop: (array) => {
+    if (!Array.isArray(array)) {
       return []
     }
     array.pop()
@@ -151,8 +164,8 @@ const _array = {
    * @param array
    * @returns {*}
    */
-   shift: (array) => {
-    if(!Array.isArray(array)) {
+  shift: (array) => {
+    if (!Array.isArray(array)) {
       return []
     }
     array.shift()
@@ -166,8 +179,8 @@ const _array = {
    * @param length
    * @returns {*}
    */
-   splice_D: (array, location, length) => {
-    if(!Array.isArray(array)) {
+  splice_D: (array, location, length) => {
+    if (!Array.isArray(array)) {
       return []
     }
     array.splice(location, length)
@@ -194,9 +207,9 @@ const _array = {
    */
   moveItemToFirst: (array, index) => {
     var temp = array[index];
-    if(index == 0) return array;
+    if (index == 0) return array;
     for (var i = 0; i < array.length; i++) {
-      if(array[i] === array[index]) {
+      if (array[i] === array[index]) {
         array.splice(i, 1);
         break;
       }
@@ -211,14 +224,14 @@ const _array = {
    * @param arr2
    * @returns {boolean}
    */
-   isEqual: (array1, array2) => {
-    if(!(Array.isArray(array1) && Array.isArray(array2))) {
+  isEqual: (array1, array2) => {
+    if (!(Array.isArray(array1) && Array.isArray(array2))) {
       return false
     }
-    if(array1.length !== array2.length) {
+    if (array1.length !== array2.length) {
       return false
     }
-    for(let i = 0; i < array1.length; i++) {
+    for (let i = 0; i < array1.length; i++) {
       if (array1[i] !== array2[i]) {
         return false
       }
@@ -227,4 +240,4 @@ const _array = {
   }
 }
 
-export {_array}
+export { _array }

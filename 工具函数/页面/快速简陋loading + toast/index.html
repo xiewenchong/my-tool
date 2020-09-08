@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fixed-mask {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .fixed-center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+
+        .loadingpopWrap {
+            z-index: 9999;
+        }
+
+        .loadingpop {
+            background: rgba(0, 0, 0, .8);
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .loadingpop p {
+            line-height: 40px;
+            font-size: 16px;
+        }
+
+        .loadingpop p:first-child {
+            margin: 20px;
+        }
+
+        .loadingpopWrap p:first-child img {
+            /* margin-right: 10px;  */
+            width: 30px;
+            height: 30px;
+        }
+        .common-tips {
+            /* display: none;  */
+            padding: 7px 10px;
+            max-width: 236px;
+            line-height: 24px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2050;
+            text-align: center;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loadingpopWrap common-font fixed-mask" v-show="loading">
+        <div class="loadingpop load fixed-center">
+            <p><img src="https://qiniu-cdn0.jinxidao.com/m/icons/loading.gif" alt=""></p>
+        </div>
+    </div>
+    <div class="common-tips" id="tips" v-html="tipMessage" v-show="tip"></div>
+</body>
+<script>
+    var tipMessage = '';
+    var tip = false;
+    var loading = false;
+</script>
+
+</html>

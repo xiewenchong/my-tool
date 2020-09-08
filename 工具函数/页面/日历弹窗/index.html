@@ -1,0 +1,15 @@
+<div id="v-app" class="stock-content" v-cloak>
+    <!--预订日历-->
+        <div class="inner-pop-box" id="date-selector">
+            <p class="inner-title" v-if="!isMini">
+                <span class="go-back" @click="goBack"></span>
+                <span class="select-date">查看预约库存</span>
+                <!-- <span class="close"></span> -->
+            </p>
+            <ul class="calendar-cldweek" :class="{'no-top': isMini}"><li>日</li><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li></ul>
+            <div class="calendar" :class="{'no-top': isMini}">
+                <ul class="calendar-body">
+                </ul>
+            </div>
+        </div>
+</div>
