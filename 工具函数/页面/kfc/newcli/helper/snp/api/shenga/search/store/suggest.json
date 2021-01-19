@@ -1,0 +1,190 @@
+{
+    "message": "ok",
+    "code": 1000,
+    "content": {
+        "content": [
+            {
+                "id": 223,
+                "storeName": "国瑞城（地下一层 商场G层）",
+                "storeCode": "BJN252",
+                "province": "北京市",
+                "city": "北京市",
+                "cityCode": "00013",
+                "address": "崇外大街18号国瑞城中心G层(地下一层)（主出入口在大厦西侧地面一层）",
+                "latitude": "39.898887",
+                "longitude": "116.419091",
+                "locationLatLon": "39.898887,116.419091",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 6300,
+                "storeName": "G58餐厅",
+                "storeCode": "CHS188",
+                "province": "湖南省",
+                "city": "长沙市",
+                "cityCode": "00139",
+                "address": "雨花区万家丽中路三段206号瑞景大厦1层",
+                "latitude": "28.114822",
+                "longitude": "113.03898",
+                "locationLatLon": "28.114822,113.03898",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 71,
+                "storeName": "宣武门（四号线G出口）",
+                "storeCode": "BJN033",
+                "province": "北京市",
+                "city": "北京市",
+                "cityCode": "00013",
+                "address": "宣武门东大街24号越秀饭店西配楼一层",
+                "latitude": "39.898425",
+                "longitude": "116.375035",
+                "locationLatLon": "39.898425,116.375035",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 993,
+                "storeName": "东特",
+                "storeCode": "DAL356",
+                "province": "辽宁省",
+                "city": "大连市",
+                "cityCode": "00313",
+                "address": "华北路8G",
+                "latitude": "38.946171",
+                "longitude": "121.568369",
+                "locationLatLon": "38.946171,121.568369",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 4329,
+                "storeName": "金鹰",
+                "storeCode": "WXI089",
+                "province": "江苏省",
+                "city": "泰州市",
+                "cityCode": "00763",
+                "address": "鹏欣丽都G4幢",
+                "latitude": "32.496888",
+                "longitude": "119.921051",
+                "locationLatLon": "32.496888,119.921051",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 760,
+                "storeName": "茂业肯德基",
+                "storeCode": "CHQ202",
+                "province": "重庆市",
+                "city": "重庆市",
+                "cityCode": "00535",
+                "address": "建新北路16号G-1层",
+                "latitude": "29.577927",
+                "longitude": "106.530928",
+                "locationLatLon": "29.577927,106.530928",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 1424,
+                "storeName": "金阳北路",
+                "storeCode": "CDU226",
+                "province": "贵州省",
+                "city": "贵阳市",
+                "cityCode": "00541",
+                "address": "金朱路新世界项目G4区一层",
+                "latitude": "26.660709",
+                "longitude": "106.623764",
+                "locationLatLon": "26.660709,106.623764",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 4892,
+                "storeName": "兴隆",
+                "storeCode": "XMN061",
+                "province": "福建省",
+                "city": "厦门市",
+                "cityCode": "00042",
+                "address": "兴隆路交叉口大唐世家一期G栋",
+                "latitude": "24.508082",
+                "longitude": "118.121658",
+                "locationLatLon": "24.508082,118.121658",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 6046,
+                "storeName": "孝感服务区外卖店（十堰至汉口方向）",
+                "storeCode": "WH1988",
+                "province": "湖北省",
+                "city": "孝感市",
+                "cityCode": "00576",
+                "address": "G70汉十高速孝感服务区南区",
+                "latitude": "31.012584",
+                "longitude": "113.980537",
+                "locationLatLon": "31.012584,113.980537",
+                "updateTime": "2020-11-30 14:33:38"
+            },
+            {
+                "id": 457,
+                "storeName": "中海",
+                "storeCode": "SHY362",
+                "province": "吉林省",
+                "city": "长春市",
+                "cityCode": "00241",
+                "address": "净月开发区卫星路商住区中海水岸春城G5号楼",
+                "latitude": "43.825539",
+                "longitude": "125.365154",
+                "locationLatLon": "43.825539,125.365154",
+                "updateTime": "2020-11-30 14:33:38"
+            }
+        ],
+        "pageable": {
+            "sort": {
+                "sorted": false,
+                "unsorted": true,
+                "empty": true
+            },
+            "offset": 0,
+            "pageSize": 10,
+            "pageNumber": 0,
+            "paged": true,
+            "unpaged": false
+        },
+        "facetResultPages": [],
+        "facetQueryResult": {
+            "content": [],
+            "pageable": "INSTANCE",
+            "last": true,
+            "totalPages": 1,
+            "totalElements": 0,
+            "sort": {
+                "sorted": false,
+                "unsorted": true,
+                "empty": true
+            },
+            "first": true,
+            "size": 0,
+            "number": 0,
+            "numberOfElements": 0,
+            "empty": true
+        },
+        "highlighted": [],
+        "fieldStatsResults": {},
+        "suggestions": [],
+        "facetFields": [],
+        "facetPivotFields": [],
+        "allFacets": [
+            null
+        ],
+        "alternatives": [],
+        "totalPages": 4,
+        "totalElements": 31,
+        "sort": {
+            "sorted": false,
+            "unsorted": true,
+            "empty": true
+        },
+        "first": true,
+        "size": 10,
+        "number": 0,
+        "numberOfElements": 10,
+        "last": false,
+        "empty": false
+    }
+}

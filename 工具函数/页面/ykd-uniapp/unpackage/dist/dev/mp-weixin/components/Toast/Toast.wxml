@@ -1,0 +1,1 @@
+<view hidden="{{!(showToastUI)}}" class="toast-wrap data-v-0a370294" style="{{'top:'+(toastTop)+';'}}" animation="{{toastAnimationData}}"><view class="toast-body data-v-0a370294"><text class="toast-msg data-v-0a370294">{{toastMsg}}</text></view></view>

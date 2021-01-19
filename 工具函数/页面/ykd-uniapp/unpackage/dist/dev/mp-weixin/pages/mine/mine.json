@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "general-nav-bar": "/components/GeneralNavBar/GeneralNavBar"
+  }
+}

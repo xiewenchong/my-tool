@@ -1,0 +1,20 @@
+{
+    "code": 1000,
+    "content": {
+        "data": {
+            "deliverTimeMax": 8,
+            "deliverTimeMin": 3,
+            "detail": [
+                {
+                    "productCode": "14be141128d14a40b674e32fe2e4e286",
+                    "showPrice": 17.5,
+                    "salePrice": 10.7,
+                    "settlementPrice": 10.16,
+                    "supplierCode": "374fdba8c3a047358a1fc7a658d213fc"
+                }
+            ]
+        },
+        "success": true
+    },
+    "message": "ok"
+}

@@ -1,0 +1,1193 @@
+{
+    "code": 1000,
+    "message": "\u8bf7\u6c42\u6210\u529f",
+    "content": {
+        "data": {
+            "status": 1,
+            "products": [
+                {
+                    "classExtId": "359",
+                    "topHash": "86476860136903c1cea81b3749027b8e",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_17_23_36.png",
+                    "topName": "涓変欢濂�",
+                    "menuVoList": [
+                        {
+                            "iGroupVoList": [],
+                            "productId": "77218",
+                            "salePrice": 14.64,
+                            "nameCn": "鑲夐叆娌规潯楗洟璞嗘祮涓変欢濂�",
+                            "supplierCode": "test",
+                            "type": 2,
+                            "linkId": "100033659",
+                            "productCode": "9ed8e7d72a154a7689d2d54d66e4a4d1",
+                            "descCn": "鑲夐叆娌规潯楗洟1涓�+閰嶉1浠�(鍙€�)+鏃╅ギ鏂�1鏉�(鍙€�)\r\n",
+                            "showPrice": 16,
+                            "price": 9,
+                            "imageUrl": "965_1625148.jpg",
+                            "cate_name": "涓変欢濂�",
+                            "condimentRoundList": [
+                                {
+                                    "condimentItemList": [
+                                        {
+                                            "itemDept": 10,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 0,
+                                            "productId": "49127",
+                                            "showNameCn": "C鑲夐叆娌规潯楗洟",
+                                            "price": 0,
+                                            "imageUrl": "486_373839.jpg",
+                                            "menuCn": "C鑲夐叆娌规潯楗洟",
+                                            "isMultipleChoice": "N"
+                                        }
+                                    ],
+                                    "round": 1,
+                                    "roundNameCn": "涓婚",
+                                    "condimentSelected": [],
+                                    "itemCount": 1
+                                },
+                                {
+                                    "condimentItemList": [
+                                        {
+                                            "itemDept": 13,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 0,
+                                            "productId": "63412",
+                                            "showNameCn": "鏃╄尪鍙惰泲",
+                                            "price": 0,
+                                            "imageUrl": "960_1609459.jpg",
+                                            "menuCn": "鏃╄尪鍙惰泲",
+                                            "isMultipleChoice": "N"
+                                        },
+                                        {
+                                            "itemDept": 13,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 0,
+                                            "productId": "77232",
+                                            "showNameCn": "鏃╄柉楗�",
+                                            "price": 0,
+                                            "imageUrl": "960_1609460.jpg",
+                                            "menuCn": "鏃╄柉楗�",
+                                            "isMultipleChoice": "N"
+                                        },
+                                        {
+                                            "itemDept": 13,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 1,
+                                            "productId": "77233",
+                                            "showNameCn": "鏃╄憽寮忚泲鎸�",
+                                            "price": 1,
+                                            "imageUrl": "960_1609461.jpg",
+                                            "price_overflow": 1.87,
+                                            "menuCn": "鏃╄憽寮忚泲鎸�",
+                                            "isMultipleChoice": "N"
+                                        },
+                                        {
+                                            "itemDept": 13,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 1,
+                                            "productId": "77234",
+                                            "showNameCn": "鏃╅鑽夊彲棰�",
+                                            "price": 1,
+                                            "imageUrl": "960_1609457.jpg",
+                                            "price_overflow": 1.87,
+                                            "menuCn": "鏃╅鑽夊彲棰�",
+                                            "isMultipleChoice": "N"
+                                        },
+                                        {
+                                            "itemDept": 13,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 0,
+                                            "productId": "77235",
+                                            "showNameCn": "鏃╂硶寮忓彲棰�",
+                                            "price": 0,
+                                            "imageUrl": "960_1609458.jpg",
+                                            "menuCn": "鏃╂硶寮忓彲棰�",
+                                            "isMultipleChoice": "N"
+                                        }
+                                    ],
+                                    "round": 2,
+                                    "roundNameCn": "灏忛",
+                                    "condimentSelected": [],
+                                    "itemCount": 2
+                                },
+                                {
+                                    "condimentItemList": [
+                                        {
+                                            "itemDept": 10,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 0,
+                                            "productId": "44523",
+                                            "showNameCn": "閱囪眴娴�(鐑�)",
+                                            "price": 7,
+                                            "imageUrl": "486_374068.jpg",
+                                            "price_overflow": 7.9,
+                                            "menuCn": "閱囪眴娴�(鐑�)",
+                                            "isMultipleChoice": "N"
+                                        },
+                                        {
+                                            "itemDept": 10,
+                                            "selected_qty": 0,
+                                            "quantity": "1",
+                                            "addonPrice": 5,
+                                            "productId": "45575",
+                                            "showNameCn": "鏃╄悓娉℃场鐗涘ザ",
+                                            "price": 12,
+                                            "imageUrl": "854_1216658.jpg",
+                                            "price_overflow": 12.9,
+                                            "menuCn": "鏃╄悓娉℃场鐗涘ザ",
+                                            "isMultipleChoice": "N"
+                                        }
+                                    ],
+                                    "round": 3,
+                                    "roundNameCn": "楗枡",
+                                    "condimentSelected": [],
+                                    "itemCount": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "好吃好吃好吃好吃好吃好吃好吃好吃",
+                            "classExtId": "360",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_40_26.png",
+                            "topName": "自定义自定义",
+                            "menuVoList": [
+                                {
+                                    "productCode": "474caf98aa69527295c925ef1a7fb629",
+                                    "productId": "11111",
+                                    "salePrice": 11.111,
+                                    "showPrice": 1111,
+                                    "price": 1111,
+                                    "imageUrl": "https://sheng-production.oss-cn-shenzhen.aliyuncs.com/product/pro.jpg",
+                                    "nameCn": "y一y一y一y一y一y一y一y一y一",
+                                    "supplierCode": "e86b1a0058fe11eab5dc00163e0c5ee0",
+                                    "type": 0
+                                }
+                            ]
+                        },
+                        {
+                            "nameCn": "不贵不贵不贵不贵不贵不贵不贵不贵不贵",
+                            "classExtId": "361",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_41_19.png",
+                            "topName": "瓒呮湁鏂欒眴鑺�",
+                            "menuVoList": [
+                                {
+                                    "productCode": "474caf98aa69527295c925ef1a7fb629",
+                                    "productId": "2222",
+                                    "salePrice": 22.22222,
+                                    "showPrice": 2222,
+                                    "price": 2222,
+                                    "imageUrl": "https://sheng-production.oss-cn-shenzhen.aliyuncs.com/product/pro.jpg",
+                                    "nameCn": "二二二二二二二二二二.9璧�",
+                                    "supplierCode": "e86b1a0058fe11eab5dc00163e0c5ee0",
+                                    "type": 0
+                                }
+                            ]
+                        },
+                        {
+                            "nameCn": "实惠实惠实惠实惠实惠实惠实惠实惠",
+                            "classExtId": "362",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_42_10.png",
+                            "topName": "瓒呮湁鏂欒眴鑺�",
+                            "menuVoList": [
+                                {
+                                    "productCode": "474caf98aa69527295c925ef1a7fb629",
+                                    "productId": "3333",
+                                    "salePrice": 33.3333,
+                                    "showPrice": 33333,
+                                    "price": 33333,
+                                    "imageUrl": "https://sheng-production.oss-cn-shenzhen.aliyuncs.com/product/pro.jpg",
+                                    "nameCn": "三三三三三三三三三三三.9璧�",
+                                    "supplierCode": "e86b1a0058fe11eab5dc00163e0c5ee0",
+                                    "type": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "topHash": "1e510eb24cf029c28b845cbdb179cfea",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_40_26.png",
+                    "topName": "自定义自定义自定义",
+                    "menuVoList": []
+                },
+                {
+                    "menuVoList": [
+                        {
+                            "productCode": "474caf98aa69527295c925ef1a7fb629",
+                            "productId": "1",
+                            "salePrice": 22.52,
+                            "showPrice": 33,
+                            "price": 33,
+                            "imageUrl": "https://sheng-production.oss-cn-shenzhen.aliyuncs.com/product/pro.jpg",
+                            "nameCn": "2浠借€佸寳浜浮鑲夊嵎锛岃秴鍒掔畻19.9璧�",
+                            "supplierCode": "e86b1a0058fe11eab5dc00163e0c5ee0",
+                            "type": 0
+                        }
+                    ],
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/218.png",
+                    "topName": "瓒呭垝绠�"
+                },
+                {
+                    "classExtId": "288",
+                    "topHash": "badb8bd314639747d62daaf59bfd3194",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2018_11_01_15_19_02.png",
+                    "topName": "我的滑板鞋",
+                    "menuVoList": [
+                        {
+                            "productCode": "474caf98aa69527295c925ef1a7fb629",
+                            "productId": "222",
+                            "salePrice": 99.99,
+                            "showPrice": 98.98,
+                            "price": 97.97,
+                            "imageUrl": "https://sheng-production.oss-cn-shenzhen.aliyuncs.com/product/pro.jpg",
+                            "nameCn": "牛啵啵啵啵啵啵啵啵啵啵啵啵",
+                            "supplierCode": "65dsaf46sd5f46sd5f46s5df",
+                            "type": 1,
+                            "iGroupVoList": [
+                                {
+                                    "productId": "33",
+                                    "salePrice": 99.99,
+                                    "id": 1,
+                                    "type": 0,
+                                    "nameCn": "牛啵啵啵啵啵啵啵啵啵啵啵啵",
+                                    "specDesc": "P香辣鸡腿堡"
+                                },
+                                {
+                                    "productId": "44",
+                                    "salePrice": 45,
+                                    "id": 2,
+                                    "type": 0,
+                                    "nameCn": "牛啵啵啵啵啵啵啵啵啵啵啵啵",
+                                    "specDesc": "P劲脆鸡腿堡"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "涓変欢濂�",
+                            "classExtId": "360",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_40_26.png",
+                            "topName": "瓒呮湁鏂欒眴鑺�",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "浜屼欢濂�",
+                            "classExtId": "361",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_41_19.png",
+                            "topName": "瓒呮湁鏂欒眴鑺�",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "鍗曞搧",
+                            "classExtId": "362",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_42_10.png",
+                            "topName": "瓒呮湁鏂欒眴鑺�",
+                            "menuVoList": []
+                        }
+                    ],
+                    "topHash": "1e510eb24cf029c28b845cbdb179cfea",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_23_14_40_26.png",
+                    "topName": "瓒呮湁鏂欒眴鑺�",
+                    "menuVoList": []
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "涓変欢濂�",
+                            "classExtId": "298",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2018_11_05_17_08_17.png",
+                            "topName": "楗洟",
+                            "menuVoList": [
+                                {
+                                    "iGroupVoList": [],
+                                    "productId": "77218",
+                                    "showNameCn": "鑲夐叆娌规潯楗洟BBN璞嗘祮涓変欢濂�",
+                                    "salePrice": 14.64,
+                                    "nameCn": "鑲夐叆娌规潯楗洟璞嗘祮涓変欢濂�",
+                                    "supplierCode": "test",
+                                    "type": 2,
+                                    "isMultipleChoice": "N",
+                                    "linkId": "100033659",
+                                    "productCode": "9ed8e7d72a154a7689d2d54d66e4a4d1",
+                                    "descCn": "鑲夐叆娌规潯楗洟1涓�+閰嶉1浠�(鍙€�)+鏃╅ギ鏂�1鏉�(鍙€�)\r\n",
+                                    "showPrice": 16,
+                                    "price": 9,
+                                    "imageUrl": "965_1625148.jpg",
+                                    "cate_name": "楗洟",
+                                    "condimentRoundList": [
+                                        {
+                                            "condimentItemList": [
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "49127",
+                                                    "showNameCn": "C鑲夐叆娌规潯楗洟",
+                                                    "price": 0,
+                                                    "imageUrl": "486_373839.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "C鑲夐叆娌规潯楗洟",
+                                                    "isMultipleChoice": "N"
+                                                }
+                                            ],
+                                            "round": 1,
+                                            "roundNameCn": "涓婚",
+                                            "condimentSelected": [],
+                                            "itemCount": 1
+                                        },
+                                        {
+                                            "condimentItemList": [
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "63412",
+                                                    "showNameCn": "鏃╄尪鍙惰泲",
+                                                    "price": 0,
+                                                    "imageUrl": "960_1609459.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╄尪鍙惰泲",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "77232",
+                                                    "showNameCn": "鏃╄柉楗�",
+                                                    "price": 0,
+                                                    "imageUrl": "960_1609460.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╄柉楗�",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 1,
+                                                    "productId": "77233",
+                                                    "showNameCn": "鏃╄憽寮忚泲鎸�",
+                                                    "price": 1,
+                                                    "imageUrl": "960_1609461.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╄憽寮忚泲鎸�",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 1,
+                                                    "productId": "77234",
+                                                    "showNameCn": "鏃╅鑽夊彲棰�",
+                                                    "price": 1,
+                                                    "imageUrl": "960_1609457.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╅鑽夊彲棰�",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "77235",
+                                                    "showNameCn": "鏃╂硶寮忓彲棰�",
+                                                    "price": 0,
+                                                    "imageUrl": "960_1609458.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂硶寮忓彲棰�",
+                                                    "isMultipleChoice": "N"
+                                                }
+                                            ],
+                                            "round": 2,
+                                            "roundNameCn": "灏忛",
+                                            "condimentSelected": [],
+                                            "itemCount": 1
+                                        },
+                                        {
+                                            "condimentItemList": [
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "44523",
+                                                    "showNameCn": "閱囪眴娴�(鐑�)",
+                                                    "price": 7,
+                                                    "imageUrl": "486_374068.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "閱囪眴娴�(鐑�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 5,
+                                                    "productId": "45575",
+                                                    "showNameCn": "鏃╄悓娉℃场鐗涘ザ",
+                                                    "price": 12,
+                                                    "imageUrl": "854_1216658.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╄悓娉℃场鐗涘ザ",
+                                                    "isMultipleChoice": "N"
+                                                }
+                                            ],
+                                            "round": 3,
+                                            "roundNameCn": "楗枡",
+                                            "condimentSelected": [],
+                                            "itemCount": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "nameCn": "浜屼欢濂�",
+                            "classExtId": "288",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2018_11_02_13_33_45.png",
+                            "topName": "楗洟",
+                            "menuVoList": [
+                                {
+                                    "iGroupVoList": [],
+                                    "productId": "49744",
+                                    "showNameCn": "P鑲夐叆娌规潯楗洟BBN璞嗘祮浜屼欢濂�",
+                                    "salePrice": 10.4,
+                                    "nameCn": "鑲夐叆娌规潯楗洟璞嗘祮浜屼欢濂�",
+                                    "supplierCode": "test",
+                                    "type": 2,
+                                    "isMultipleChoice": "N",
+                                    "linkId": "100007083",
+                                    "productCode": "6c680f2714ce4610abdf90119c522e84",
+                                    "descCn": "鑲夐叆娌规潯楗洟1涓�+鏃╅楗枡1鏉�(鍙€�)",
+                                    "showPrice": 12,
+                                    "price": 5,
+                                    "imageUrl": "962_1610241.jpg",
+                                    "cate_name": "楗洟",
+                                    "condimentRoundList": [
+                                        {
+                                            "condimentItemList": [
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "49127",
+                                                    "showNameCn": "C鑲夐叆娌规潯楗洟",
+                                                    "price": 0,
+                                                    "imageUrl": "486_373839.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "C鑲夐叆娌规潯楗洟",
+                                                    "isMultipleChoice": "N"
+                                                }
+                                            ],
+                                            "round": 1,
+                                            "roundNameCn": "涓婚",
+                                            "condimentSelected": [],
+                                            "itemCount": 1
+                                        },
+                                        {
+                                            "condimentItemList": [
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "44523",
+                                                    "showNameCn": "閱囪眴娴�(鐑�)",
+                                                    "price": 7,
+                                                    "imageUrl": "486_374068.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "閱囪眴娴�(鐑�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 2,
+                                                    "productId": "44525",
+                                                    "showNameCn": "鏃╃編寮�(涓�)",
+                                                    "price": 9,
+                                                    "imageUrl": "820_1119859.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╃編寮�(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 3,
+                                                    "productId": "49252",
+                                                    "showNameCn": "鏃╁啺缇庡紡鍜栧暋(涓�)",
+                                                    "price": 10,
+                                                    "imageUrl": "832_1152397.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁啺缇庡紡鍜栧暋(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 4,
+                                                    "productId": "44528",
+                                                    "showNameCn": "鏃╂嬁閾�(涓�)",
+                                                    "price": 11,
+                                                    "imageUrl": "820_1119543.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂嬁閾�(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 7,
+                                                    "productId": "44540",
+                                                    "showNameCn": "鏃╂嬁閾�(澶�)",
+                                                    "price": 14,
+                                                    "imageUrl": "972_1649989.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂嬁閾�(澶�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 9,
+                                                    "productId": "49254",
+                                                    "showNameCn": "鏃╁啺鎷块搧(涓�)",
+                                                    "price": 16,
+                                                    "imageUrl": "960_1609538.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁啺鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "46573",
+                                                    "showNameCn": "鏃╃劍绯栫帥濂囨湹涓�",
+                                                    "price": 17,
+                                                    "imageUrl": "907_1397828.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╃劍绯栫帥濂囨湹涓�",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "44529",
+                                                    "showNameCn": "鏃╁弻钀冩境鐧戒腑",
+                                                    "price": 17,
+                                                    "imageUrl": "907_1397732.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁弻钀冩境鐧戒腑",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 9,
+                                                    "productId": "44534",
+                                                    "showNameCn": "鏃╁崱甯冨璇�(涓�)",
+                                                    "price": 16,
+                                                    "imageUrl": "820_1119784.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁崱甯冨璇�(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "77305",
+                                                    "showNameCn": "鏃╂鏋滈鍛崇儹鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609540.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂鏋滈鍛崇儹鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "77304",
+                                                    "showNameCn": "鏃╂鏋滈鍛冲啺鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609539.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂鏋滈鍛冲啺鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "77307",
+                                                    "showNameCn": "鏃╅鑽夐鍛崇儹鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609583.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╅鑽夐鍛崇儹鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "77306",
+                                                    "showNameCn": "鏃╅鑽夐鍛冲啺鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609582.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╅鑽夐鍛冲啺鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "77308",
+                                                    "showNameCn": "鏃╂姽鑼舵嬁閾佺儹(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609584.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂姽鑼舵嬁閾佺儹(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 10,
+                                                    "productId": "77309",
+                                                    "showNameCn": "鏃╂姽鑼舵嬁閾佸啺(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609585.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂姽鑼舵嬁閾佸啺(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 5,
+                                                    "productId": "45575",
+                                                    "showNameCn": "鏃╄悓娉℃场鐗涘ザ",
+                                                    "price": 12,
+                                                    "imageUrl": "854_1216658.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╄悓娉℃场鐗涘ザ",
+                                                    "isMultipleChoice": "N"
+                                                }
+                                            ],
+                                            "round": 2,
+                                            "roundNameCn": "楗枡",
+                                            "condimentSelected": [],
+                                            "itemCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "iGroupVoList": [],
+                                    "productId": "54380",
+                                    "showNameCn": "鑲夐叆娌规潯楗洟BBN鍜栧暋浜屼欢濂�",
+                                    "salePrice": 11.6,
+                                    "nameCn": "鑲夐叆娌规潯楗洟鍜栧暋浜屼欢濂�",
+                                    "supplierCode": "test",
+                                    "type": 2,
+                                    "isMultipleChoice": "N",
+                                    "linkId": "100011596",
+                                    "productCode": "b6ca069e7baf4393bcf15528728af71d",
+                                    "descCn": "鑲夐叆娌规潯楗洟1涓�+鍜栧暋1鏉紙鍙€夛級",
+                                    "showPrice": 14,
+                                    "price": 5,
+                                    "imageUrl": "962_1613262.jpg",
+                                    "cate_name": "楗洟",
+                                    "condimentRoundList": [
+                                        {
+                                            "condimentItemList": [
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "49127",
+                                                    "showNameCn": "C鑲夐叆娌规潯楗洟",
+                                                    "price": 0,
+                                                    "imageUrl": "486_373839.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "C鑲夐叆娌规潯楗洟",
+                                                    "isMultipleChoice": "N"
+                                                }
+                                            ],
+                                            "round": 1,
+                                            "roundNameCn": "涓婚",
+                                            "condimentSelected": [],
+                                            "itemCount": 1
+                                        },
+                                        {
+                                            "condimentItemList": [
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 0,
+                                                    "productId": "44525",
+                                                    "showNameCn": "鏃╃編寮�(涓�)",
+                                                    "price": 9,
+                                                    "imageUrl": "820_1119859.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╃編寮�(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 1,
+                                                    "productId": "49252",
+                                                    "showNameCn": "鏃╁啺缇庡紡鍜栧暋(涓�)",
+                                                    "price": 10,
+                                                    "imageUrl": "832_1152397.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁啺缇庡紡鍜栧暋(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 2,
+                                                    "productId": "44528",
+                                                    "showNameCn": "鏃╂嬁閾�(涓�)",
+                                                    "price": 11,
+                                                    "imageUrl": "820_1119543.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂嬁閾�(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 5,
+                                                    "productId": "44540",
+                                                    "showNameCn": "鏃╂嬁閾�(澶�)",
+                                                    "price": 14,
+                                                    "imageUrl": "972_1649989.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂嬁閾�(澶�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 7,
+                                                    "productId": "49254",
+                                                    "showNameCn": "鏃╁啺鎷块搧(涓�)",
+                                                    "price": 16,
+                                                    "imageUrl": "960_1609538.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁啺鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "46573",
+                                                    "showNameCn": "鏃╃劍绯栫帥濂囨湹涓�",
+                                                    "price": 17,
+                                                    "imageUrl": "907_1397828.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╃劍绯栫帥濂囨湹涓�",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "44529",
+                                                    "showNameCn": "鏃╁弻钀冩境鐧戒腑",
+                                                    "price": 17,
+                                                    "imageUrl": "907_1397732.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁弻钀冩境鐧戒腑",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 7,
+                                                    "productId": "44534",
+                                                    "showNameCn": "鏃╁崱甯冨璇�(涓�)",
+                                                    "price": 16,
+                                                    "imageUrl": "820_1119784.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╁崱甯冨璇�(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "77305",
+                                                    "showNameCn": "鏃╂鏋滈鍛崇儹鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609540.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂鏋滈鍛崇儹鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 13,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "77304",
+                                                    "showNameCn": "鏃╂鏋滈鍛冲啺鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609539.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂鏋滈鍛冲啺鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "77307",
+                                                    "showNameCn": "鏃╅鑽夐鍛崇儹鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609583.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╅鑽夐鍛崇儹鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "77306",
+                                                    "showNameCn": "鏃╅鑽夐鍛冲啺鎷块搧(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609582.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╅鑽夐鍛冲啺鎷块搧(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "77308",
+                                                    "showNameCn": "鏃╂姽鑼舵嬁閾佺儹(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609584.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂姽鑼舵嬁閾佺儹(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 8,
+                                                    "productId": "77309",
+                                                    "showNameCn": "鏃╂姽鑼舵嬁閾佸啺(涓�)",
+                                                    "price": 17,
+                                                    "imageUrl": "960_1609585.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╂姽鑼舵嬁閾佸啺(涓�)",
+                                                    "isMultipleChoice": "N"
+                                                },
+                                                {
+                                                    "itemDept": 10,
+                                                    "selected_qty": 0,
+                                                    "quantity": "1",
+                                                    "addonPrice": 3,
+                                                    "productId": "45575",
+                                                    "showNameCn": "鏃╄悓娉℃场鐗涘ザ",
+                                                    "price": 12,
+                                                    "imageUrl": "854_1216658.jpg",
+                                                    "cate_name": "楗洟",
+                                                    "menuCn": "鏃╄悓娉℃场鐗涘ザ",
+                                                    "isMultipleChoice": "N"
+                                                }
+                                            ],
+                                            "round": 2,
+                                            "roundNameCn": "楗枡",
+                                            "condimentSelected": [],
+                                            "itemCount": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "nameCn": "鍗曞搧",
+                            "classExtId": "300",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/",
+                            "topName": "楗洟",
+                            "menuVoList": []
+                        }
+                    ],
+                    "topHash": "781f04420fd0d1c9366389ca9319a970",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2018_11_05_17_08_17.png",
+                    "topName": "楗洟",
+                    "menuVoList": []
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "涓変欢濂�",
+                            "classExtId": "249",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_03_13_11_05_15.png",
+                            "topName": "澶чゼ",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "浜屼欢濂�",
+                            "classExtId": "299",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_03_13_11_05_59.png",
+                            "topName": "澶чゼ",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "鍗曞搧",
+                            "classExtId": "290",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2019_08_30_15_43_02.png",
+                            "topName": "澶чゼ",
+                            "menuVoList": []
+                        }
+                    ],
+                    "topHash": "6d5320295e01c011ebd5806996a25a8c",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_03_13_11_05_15.png",
+                    "topName": "澶чゼ",
+                    "menuVoList": []
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "涓変欢濂�",
+                            "classExtId": "353",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_14_57.png",
+                            "topName": "鍙",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "浜屼欢濂�",
+                            "classExtId": "354",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_17_50.png",
+                            "topName": "鍙",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "鍗曞搧",
+                            "classExtId": "355",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_18_39.png",
+                            "topName": "鍙",
+                            "menuVoList": []
+                        }
+                    ],
+                    "topHash": "f84a533ccf01bc9078b4c831f0e00a05",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_14_57.png",
+                    "topName": "鍙",
+                    "menuVoList": []
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "涓変欢濂�",
+                            "classExtId": "301",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2018_11_05_17_04_18.png",
+                            "topName": "甯曞凹灏�",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "浜屼欢濂�",
+                            "classExtId": "261",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2019_08_30_15_44_13.png",
+                            "topName": "甯曞凹灏�",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "鍗曞搧",
+                            "classExtId": "302",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2019_08_30_15_45_39.png",
+                            "topName": "甯曞凹灏�",
+                            "menuVoList": []
+                        }
+                    ],
+                    "topHash": "77668bee59e2b2b1740a9102e13a8a6e",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2018_11_05_17_04_18.png",
+                    "topName": "甯曞凹灏�",
+                    "menuVoList": []
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "涓変欢濂�",
+                            "classExtId": "356",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_19_19.png",
+                            "topName": "鐜扮啲濂界播",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "浜屼欢濂�",
+                            "classExtId": "357",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_19_58.png",
+                            "topName": "鐜扮啲濂界播",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "鍗曞搧",
+                            "classExtId": "358",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_20_38.png",
+                            "topName": "鐜扮啲濂界播",
+                            "menuVoList": []
+                        }
+                    ],
+                    "topHash": "341c285feba0f2f7a9f6659a3e017cce",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_17_15_19_19.png",
+                    "topName": "鐜扮啲濂界播",
+                    "menuVoList": []
+                },
+                {
+                    "classExtId": "251",
+                    "topHash": "0b92fab0ce25da40c3032834e42009d2",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2019_07_28_09_54_24.png",
+                    "topName": "鏃╅鍏ㄩ",
+                    "menuVoList": []
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "灏忛",
+                            "classExtId": "252",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2019_06_24_14_45_45.png",
+                            "topName": "灏忛鐢滅偣",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "閰嶉",
+                            "classExtId": "306",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2018_11_16_15_37_21.png",
+                            "topName": "灏忛鐢滅偣",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "鐢滅偣",
+                            "classExtId": "297",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/",
+                            "topName": "灏忛鐢滅偣",
+                            "menuVoList": []
+                        }
+                    ],
+                    "topHash": "d61c6c5c63d8885c972362fc033275d9",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2019_06_24_14_45_45.png",
+                    "topName": "灏忛鐢滅偣",
+                    "menuVoList": []
+                },
+                {
+                    "childClassList": [
+                        {
+                            "nameCn": "鍐烽ギ",
+                            "classExtId": "296",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_04_23_24_49.png",
+                            "topName": "楗枡",
+                            "menuVoList": []
+                        },
+                        {
+                            "nameCn": "鐑ギ",
+                            "classExtId": "253",
+                            "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/253.png",
+                            "topName": "楗枡",
+                            "menuVoList": [
+                                {
+                                    "iGroupVoList": [],
+                                    "productId": "8537",
+                                    "showNameCn": "閱囪眴娴咮BN(鐑�)",
+                                    "salePrice": 4.6,
+                                    "nameCn": "閱囪眴娴�(鐑�)",
+                                    "supplierCode": "test",
+                                    "type": 0,
+                                    "isMultipleChoice": "N",
+                                    "linkId": "15812",
+                                    "productCode": "5a4f4e8d27114243aa8c9350803a62af",
+                                    "descCn": "閱囪眴娴�(鐑�)1鏉�",
+                                    "showPrice": 7,
+                                    "price": 7,
+                                    "imageUrl": "433_326847.jpg",
+                                    "cate_name": "楗枡",
+                                    "condimentRoundList": []
+                                }
+                            ]
+                        }
+                    ],
+                    "topHash": "31c325eebb588658a261dd5db2cb09c8",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/iclasscn_13_2_2020_04_04_23_24_49.png",
+                    "topName": "楗枡",
+                    "menuVoList": []
+                },
+                {
+                    "classExtId": "283",
+                    "topHash": "276d37b7cadf79a30aa167e21d9f6524",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/283.png",
+                    "topName": "鐜扮（鍜栧暋",
+                    "menuVoList": []
+                },
+                {
+                    "classExtId": "218",
+                    "topHash": "2f36359e06018b483b13c5aa7e6d57cc",
+                    "imageCnUrl": "https://imgorder.kfc.com.cn/mwos/Version/218.png",
+                    "topName": "浼樻儬鍒�",
+                    "menuVoList": []
+                }
+            ]
+        },
+        "success": true
+    }
+}

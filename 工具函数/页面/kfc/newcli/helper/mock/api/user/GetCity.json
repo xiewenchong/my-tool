@@ -1,0 +1,78 @@
+[
+  {
+    "CityCode": "110100",
+    "CityName": "北京市"
+  },
+  {
+    "CityCode": "110101",
+    "CityName": "东城区"
+  },
+  {
+    "CityCode": "110102",
+    "CityName": "西城区"
+  },
+  {
+    "CityCode": "110103",
+    "CityName": "崇文区"
+  },
+  {
+    "CityCode": "110104",
+    "CityName": "宣武区"
+  },
+  {
+    "CityCode": "110105",
+    "CityName": "朝阳区"
+  },
+  {
+    "CityCode": "110106",
+    "CityName": "丰台区"
+  },
+  {
+    "CityCode": "110107",
+    "CityName": "石景山区"
+  },
+  {
+    "CityCode": "110108",
+    "CityName": "海淀区"
+  },
+  {
+    "CityCode": "110109",
+    "CityName": "门头沟区"
+  },
+  {
+    "CityCode": "110111",
+    "CityName": "房山区"
+  },
+  {
+    "CityCode": "110112",
+    "CityName": "通州区"
+  },
+  {
+    "CityCode": "110113",
+    "CityName": "顺义区"
+  },
+  {
+    "CityCode": "110114",
+    "CityName": "昌平区"
+  },
+  {
+    "CityCode": "110115",
+    "CityName": "大兴区"
+  },
+  {
+    "CityCode": "110116",
+    "CityName": "怀柔区"
+  },
+  {
+    "CityCode": "110117",
+    "CityName": "平谷区"
+  },
+  {
+    "CityCode": "110228",
+    "CityName": "密云县"
+  },
+  {
+    "CityCode": "110229",
+    "CityName": "延庆县"
+  }
+]

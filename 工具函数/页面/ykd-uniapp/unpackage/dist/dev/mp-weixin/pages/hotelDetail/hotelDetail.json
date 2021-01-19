@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "general-nav-bar": "/components/GeneralNavBar/GeneralNavBar",
+    "toast": "/components/Toast/Toast",
+    "loading": "/components/Loading/Loading",
+    "confirm-dialog": "/components/ConfirmDialog/ConfirmDialog",
+    "w-x-auth-dialog": "/components/WXAuthDialog/WXAuthDialog",
+    "home-hor-recmd-list": "/components/HomeHorRecmdList/HomeHorRecmdList",
+    "mounted-flag": "/components/MountedFlag/MountedFlag"
+  }
+}

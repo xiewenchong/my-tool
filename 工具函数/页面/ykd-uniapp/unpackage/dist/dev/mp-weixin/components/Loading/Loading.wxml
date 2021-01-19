@@ -1,0 +1,1 @@
+<view hidden="{{!(showLoadingUI)}}" class="loading-popup-v18"><image class="loading-img-v18-wrap" mode="scaleToFill" src="{{loadingImgUrl}}"></image></view>

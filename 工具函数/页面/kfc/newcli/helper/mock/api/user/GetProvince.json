@@ -1,0 +1,163 @@
+[
+    {
+        "ProvinceCode": "110000",
+        "ProvinceName": "北京市",
+        "select": 1
+    },
+    {
+        "ProvinceCode": "120000",
+        "ProvinceName": "天津市"
+    },
+    {
+        "ProvinceCode": "130000",
+        "ProvinceName": "河北省"
+    },
+    {
+        "ProvinceCode": "140000",
+        "ProvinceName": "山西省"
+    },
+    {
+        "ProvinceCode": "150000",
+        "ProvinceName": "内蒙古自治区"
+    },
+    {
+        "ProvinceCode": "210000",
+        "ProvinceName": "辽宁省"
+    },
+    {
+        "ProvinceCode": "220000",
+        "ProvinceName": "吉林省"
+    },
+    {
+        "ProvinceCode": "230000",
+        "ProvinceName": "黑龙江省"
+    },
+    {
+        "ProvinceCode": "310000",
+        "ProvinceName": "上海市"
+    },
+    {
+        "ProvinceCode": "320000",
+        "ProvinceName": "江苏省"
+    },
+    {
+        "ProvinceCode": "330000",
+        "ProvinceName": "浙江省"
+    },
+    {
+        "ProvinceCode": "340000",
+        "ProvinceName": "安徽省"
+    },
+    {
+        "ProvinceCode": "350000",
+        "ProvinceName": "福建省"
+    },
+    {
+        "ProvinceCode": "360000",
+        "ProvinceName": "江西省"
+    },
+    {
+        "ProvinceCode": "370000",
+        "ProvinceName": "山东省"
+    },
+    {
+        "ProvinceCode": "410000",
+        "ProvinceName": "河南省"
+    },
+    {
+        "ProvinceCode": "420000",
+        "ProvinceName": "湖北省"
+    },
+    {
+        "ProvinceCode": "430000",
+        "ProvinceName": "湖南省"
+    },
+    {
+        "ProvinceCode": "440000",
+        "ProvinceName": "广东省"
+    },
+    {
+        "ProvinceCode": "450000",
+        "ProvinceName": "广西壮族自治区"
+    },
+    {
+        "ProvinceCode": "460000",
+        "ProvinceName": "海南省"
+    },
+    {
+        "ProvinceCode": "500000",
+        "ProvinceName": "重庆市"
+    },
+    {
+        "ProvinceCode": "510000",
+        "ProvinceName": "四川省"
+    },
+    {
+        "ProvinceCode": "520000",
+        "ProvinceName": "贵州省"
+    },
+    {
+        "ProvinceCode": "530000",
+        "ProvinceName": "云南省"
+    },
+    {
+        "ProvinceCode": "540000",
+        "ProvinceName": "西藏自治区"
+    },
+    {
+        "ProvinceCode": "610000",
+        "ProvinceName": "陕西省"
+    },
+    {
+        "ProvinceCode": "620000",
+        "ProvinceName": "甘肃省"
+    },
+    {
+        "ProvinceCode": "630000",
+        "ProvinceName": "青海省"
+    },
+    {
+        "ProvinceCode": "640000",
+        "ProvinceName": "宁夏回族自治区"
+    },
+    {
+        "ProvinceCode": "650000",
+        "ProvinceName": "新疆维吾尔自治区"
+    },
+    {
+        "ProvinceCode": "710000",
+        "ProvinceName": "台湾"
+    },
+    {
+        "ProvinceCode": "810000",
+        "ProvinceName": "香港"
+    },
+    {
+        "ProvinceCode": "820000",
+        "ProvinceName": "澳门"
+    },
+    {
+        "ProvinceCode": "910000",
+        "ProvinceName": "马尔代夫"
+    },
+    {
+        "ProvinceCode": "920000",
+        "ProvinceName": "塞舌尔"
+    },
+    {
+        "ProvinceCode": "930000",
+        "ProvinceName": "泰国"
+    },
+    {
+        "ProvinceCode": "940000",
+        "ProvinceName": "马来西亚"
+    },
+    {
+        "ProvinceCode": "950000",
+        "ProvinceName": "新加坡"
+    },
+    {
+        "ProvinceCode": "960000",
+        "ProvinceName": "毛里求斯"
+    }
+]

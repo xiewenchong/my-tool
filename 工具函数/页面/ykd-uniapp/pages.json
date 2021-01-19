@@ -1,0 +1,103 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+		    "path" : "pages/order/order",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+		    }
+		    
+		},
+		{
+            "path" : "pages/member/member",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle":"custom"
+            }
+            
+        },
+		{
+		    "path" : "pages/mine/mine",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": true,
+				"navigationStyle":"custom"
+		    }
+		    
+		},
+		{
+			"path": "pages/hotelDetail/hotelDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/product/productDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom"
+			}
+		}
+    ],
+	
+	"tabBar": {
+		"color":"#666666",
+		"selectedColor":"#456561",
+		"borderStyle":"white",
+		"backgroundColor":"#ffffff",
+		"list": [
+			{
+				"pagePath":"pages/home/home",
+				"text":"首页",
+				"iconPath":"static/img/home_normal@3x.png",
+				"selectedIconPath":"static/img/home_current@3x.png"
+			},
+			{
+				"pagePath":"pages/community/community",
+				"text":"社区",
+				"iconPath":"static/img/community_normal@3x.png",
+				"selectedIconPath":"static/img/community_current@3x.png"
+			},
+			{
+				"pagePath":"pages/order/order",
+				"text":"订单",
+				"iconPath":"static/img/orders_normal@3x.png",
+				"selectedIconPath":"static/img/orders_current@3x.png"
+			},
+			{
+				"pagePath":"pages/member/member",
+				"text":"会员",
+				"iconPath":"static/img/member_normal@3x.png",
+				"selectedIconPath":"static/img/member_current@3x.png"
+			}
+		]	
+	},
+	
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

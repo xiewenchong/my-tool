@@ -1,0 +1,93 @@
+
+.back-icon-wrap{
+	height: 100%;
+				
+	position: absolute;
+	left:27rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+}
+.back-icon-bg{
+	width: 80rpx;
+	height:58rpx;
+	opacity: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-border-radius: 29rpx;
+	        border-radius: 29rpx;
+}
+.back-icon-bg.show{
+	background: rgba(255, 255, 255, 0.62);
+}
+.back-icon-bg .saasjiantou-zuo{
+	
+	font-size: 32rpx;
+}
+.left-title-wrap{
+	position: absolute;
+	left: 32rpx;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+}
+.left-title{
+	
+	font-size: 32rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	
+	opacity: 1;
+}
+.title-wrap{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+

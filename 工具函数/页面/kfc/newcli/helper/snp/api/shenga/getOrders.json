@@ -1,0 +1,86 @@
+{
+    "code": 1000,
+    "content": {
+        "total": 10,
+        "data": [
+            {
+                "code": "0",
+                "createTime": 1608107750000,
+                "extOrderNo": "0",
+                "id": 1,
+                "itemInfo": [
+                    {
+                        "productCode": "14be141128d14a40b674e32fe2e4e286",
+                        "quantity": 2,
+                        "productName": "P人气餐随心配",
+                        "salePrice": 31.6,
+                        "showPrice": 38,
+                        "detail": [
+                            {
+                                "productId": "55699",
+                                "quantity": 3,
+                                "name": "人气新奥良烤鸡腿堡(＋￥5) X 3"
+                            },
+                            {
+                                "productId": "61651",
+                                "quantity": 2,
+                                "name": "P热辣香骨鸡(＋￥1) X 2"
+                            }
+                        ]
+                    },
+                    {
+                        "productCode": "14be141128d14a40b674e32fe2e4e286",
+                        "quantity": 2,
+                        "productName": "P人气餐随心配",
+                        "salePrice": 31.6,
+                        "showPrice": 38
+                    }
+                ],
+                "itemType": 1,
+                "orderNo": "27102089923131223",
+                "orderSellAmount": 13,
+                "orderShowAmount": 17.50,
+                "orderStatus": 0,
+                "phone": "13005410410",
+                "platform": 1,
+                "remark": "饮料不加冰",
+                "storeCode": "GZ1004",
+                "takeout": 0,
+                "updateTime": 1608107750000,
+                "storeName": "国瑞城（地下一层 商场G层）",
+                "storeAddress": "崇外大街18号国瑞城中心G层(地下一层)（主出入口在大厦西侧地面一层）",
+                "userId": "23131223"
+            },
+            {
+                "code": "0",
+                "createTime": 1608107750000,
+                "extOrderNo": "0",
+                "id": 1,
+                "itemInfo": [
+                    {
+                        "productCode": "14be141128d14a40b674e32fe2e4e286",
+                        "quantity": 2,
+                        "productName": "P人气餐随心配",
+                        "salePrice": 31.6,
+                        "showPrice": 38
+                    }
+                ],
+                "itemType": 1,
+                "orderNo": "27102089923131223",
+                "orderSellAmount": 13,
+                "orderShowAmount": 17.50,
+                "orderStatus": -1,
+                "phone": "13005410410",
+                "platform": 1,
+                "remark": "饮料不加冰",
+                "storeCode": "GZ1004",
+                "takeout": 0,
+                "updateTime": 1608107750000,
+                "storeName": "国瑞城（地下一层 商场G层）",
+                "storeAddress": "崇外大街18号国瑞城中心G层(地下一层)（主出入口在大厦西侧地面一层）",
+                "userId": "23131223"
+            }
+        ]
+    },
+    "message": "ok"
+}

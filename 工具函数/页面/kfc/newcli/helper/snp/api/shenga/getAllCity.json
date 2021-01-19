@@ -1,0 +1,31 @@
+{
+    "code": 1000,
+    "message": "\u8bf7\u6c42\u6210\u529f",
+    "content": [
+        {
+            "code": "4410101",
+            "cityName": "深圳",
+            "firstLetter": "A"
+        },
+        {
+            "code": "4410101",
+            "cityName": "深圳2",
+            "firstLetter": "B"
+        },
+        {
+            "code": "4410101",
+            "cityName": "深圳3",
+            "firstLetter": "C"
+        },
+        {
+            "code": "4410101",
+            "cityName": "深圳3",
+            "firstLetter": "C"
+        },
+        {
+            "code": "44155501",
+            "cityName": "深圳5",
+            "firstLetter": "A"
+        }
+    ]
+}

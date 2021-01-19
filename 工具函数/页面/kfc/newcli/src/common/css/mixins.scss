@@ -1,0 +1,69 @@
+@mixin placeholder($color,$size: 14px) {
+  // 修改placeholder
+  &::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: $color;
+    font-size: $size;
+  }
+
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $color;
+    font-size: $size;
+  }
+
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $color;
+    font-size: $size;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: $color;
+    font-size: $size;
+  }
+}
+
+@mixin input-focus($color: rgb(52, 53, 53)){
+  &:focus {
+    border: 2px solid $color;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.35) inset;
+  }
+}
+
+@mixin height($size) {
+  height: $size;
+  line-height: $size;
+}
+
+@mixin text-vertical-center($size) {
+  @include height($size);
+  font-size: $size;
+}
+
+/* 隐藏input[type="number"]的箭头 */
+@mixin hide-number-arrow {
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  & {
+    -moz-appearance: textfield;
+  }
+}
+
+//超出一行显示省略号
+@mixin oneline {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//超出n行显示省略号
+@mixin moreline($t: 2) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $t;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

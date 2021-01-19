@@ -1,0 +1,49 @@
+body {
+  background-color: #F5F5FA;
+  position: relative;
+  height: 100%;
+}
+
+.main_width {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 356px;
+  padding-top: 178px;
+}
+
+.other-main_width {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
+.clearfix{
+  *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+
+
+
+//预定页card组件统一样式
+.normal-card {
+  box-sizing: border-box;
+  background: #fff;
+  width: 355px;
+  border-radius: 15px;
+  margin: 10px auto 0;
+  padding: 13px 15px 15px;
+  .title {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #666666;
+    margin-bottom: 14px;
+  }
+}

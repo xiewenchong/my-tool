@@ -1,0 +1,36 @@
+
+{
+    "code":1000,
+    "message":"\u8bf7\u6c42\u6210\u529f",
+    "timeStamp":1594016544,
+    "requestNo":"8256caa8ab817e452e8866b5d8960cef",
+    "content":[
+        {
+            "cityCode":"110100",
+            "cityName":"\u5317\u4eac\u5e02",
+            "cityNameAbbr":"\u5317\u4eac",
+            "longitude":"116.39564503788",
+            "latitude":"39.92998577808"
+        },
+        {
+            "cityCode":"310100",
+            "cityName":"\u4e0a\u6d77\u5e02",
+            "cityNameAbbr":"\u4e0a\u6d77",
+            "longitude":"121.48789948569",
+            "latitude":"31.249161710015"
+        },
+        {
+            "cityCode":"440100",
+            "cityName":"\u5e7f\u5dde\u5e02",
+            "cityNameAbbr":"\u5e7f\u5dde",
+            "longitude":"113.30764967515",
+            "latitude":"23.120049102076"
+        },
+        {
+            "cityCode":"440300",
+            "cityName":"\u6df1\u5733\u5e02",
+            "cityNameAbbr":"\u6df1\u5733",
+            "longitude":"114.02597365732",
+            "latitude":"22.546053546205"
+        }]
+}

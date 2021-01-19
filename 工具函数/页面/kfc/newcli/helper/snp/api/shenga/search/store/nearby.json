@@ -1,0 +1,76 @@
+{
+    "message": "ok",
+    "code": 1000,
+    "content": [
+        {
+            "storeName": "五羊",
+            "storeCode": "GZH004",
+            "address": "寺右新马路五羊村商住中心首层",
+            "locationLatLon": "23.118731,113.312319",
+            "distance": 0.499426
+        },
+        {
+            "storeName": "杨箕肯德基",
+            "storeCode": "GZ1004",
+            "address": "越秀区泰兴直街43号107、109房及45号101、102房商铺",
+            "locationLatLon": "23.1278,113.311771",
+            "distance": 0.9593849
+        },
+        {
+            "storeName": "寺右公馆KFC(广州市不动产登记中心旁）",
+            "storeCode": "GZ1187",
+            "address": "天河区华就路21号（寺右公馆）首层自编A8号商铺",
+            "locationLatLon": "23.116456,113.316981",
+            "distance": 1.0346005
+        },
+        {
+            "storeName": "双城国际",
+            "storeCode": "GZ1045",
+            "address": "珠江新城华穗路263号双城国际大厦",
+            "locationLatLon": "23.119902,113.318102",
+            "distance": 1.069085
+        },
+        {
+            "storeName": "东峻",
+            "storeCode": "GZH061",
+            "address": "东风东路836号东峻广场西园首层29、30号铺",
+            "locationLatLon": "23.131529,113.306882",
+            "distance": 1.2789744
+        },
+        {
+            "storeName": "署前",
+            "storeCode": "GZH017",
+            "address": "署前路33号二楼",
+            "locationLatLon": "23.123544,113.295095",
+            "distance": 1.3414623
+        },
+        {
+            "storeName": "锦轩",
+            "storeCode": "GZH101",
+            "address": "农林下路4-6号锦轩现代城首层",
+            "locationLatLon": "23.125728,113.295638",
+            "distance": 1.3811637
+        },
+        {
+            "storeName": "汉庭广场店",
+            "storeCode": "GZH478",
+            "address": "天河路97-99号",
+            "locationLatLon": "23.134228,113.319156",
+            "distance": 1.9672188
+        },
+        {
+            "storeName": "天河城",
+            "storeCode": "GZH116",
+            "address": "天河路208号天河城广场6F",
+            "locationLatLon": "23.132112,113.322665",
+            "distance": 2.038795
+        },
+        {
+            "storeName": "购书中心",
+            "storeCode": "GZH042",
+            "address": "天河路123号广州购书中心负一层",
+            "locationLatLon": "23.134186,113.320802",
+            "distance": 2.0688255
+        }
+    ]
+}
